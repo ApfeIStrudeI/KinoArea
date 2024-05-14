@@ -1,0 +1,1055 @@
+@import "fonts.scss"
+@import "helpStyles.scss"
+
+// переменные
+$mainColor: #fff
+$secondColor: #3657cb
+$thirdColor: #f2f60f
+// миксины
+@mixin forTitle
+    font-weight: 900
+    font-size: 65px
+    color: $mainColor
+// items
+.bad
+    background: #CB3F36
+.notbad
+    background:#CB6C36
+.good
+    background: #89cb36
+.verygood
+    background: #4BCB36
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    border: none
+    font-family: 'Qanelas'
+    user-select: none
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    &::-webkit-scrollbar
+        background: #1b2133
+        width: 7px
+    &::-webkit-scrollbar-thumb
+        background: $secondColor
+        border-radius: 10px
+        width: 7px
+    &::-mozilla-scrollbar
+        background: #1b2133
+        width: 7px
+    &::-mozilla-scrollbar-thumb
+        background: $secondColor
+        border-radius: 10px
+        width: 7px
+    
+body
+    background: #1e2538
+    overflow-x: hidden
+button
+    cursor: pointer
+
+.container
+    margin: 0 auto
+    max-width: 1430px
+    width: 100%
+
+.subheader
+    width: 100%
+    height: 83px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 63px
+    &__title
+        @include forTitle
+    &__devider
+        display: block
+        width: 52px
+        height: 1px
+        background-color: $mainColor
+    &__list
+        width: 800px
+        height: fit-content
+        list-style-type: none
+        font-weight: bold
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__item
+        color: rgba(255, 255, 255, 0.35)
+        font-size: 18px
+        cursor: pointer
+        transition: 0.2s all
+        &_active
+            color: $mainColor
+            text-shadow: 0 0 10px rgba(255,255,255,.7)
+.movieCards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    .cardItem
+        max-width: 340px
+        width: fit-content
+        max-height: 540px
+        height: 520px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        position: relative
+        margin-bottom: 33px
+        &__imageBox
+            height: fit-content
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            cursor: pointer
+            &::after
+                content: ''
+                position: absolute
+                border-radius: 10px
+                height: 100%
+                width: 100%
+                opacity: 0
+                background: rgba(54, 87, 203, 0.65)
+                transition: 0.5s all
+            &:hover
+                &::after
+                    opacity: 100
+            &:hover .cardItem__rectangle
+                opacity: 100
+        &__rectangle
+            cursor: pointer
+            opacity: 0
+            position: absolute
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            top: 50%
+            border-radius: 10px
+            width: 224px
+            height: 71px
+            box-shadow: 0 0 10px 0 rgba(55, 94, 232, 0.4)
+            background: $mainColor
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 700
+            font-size: 18px
+            line-height: 167%
+            z-index: 2
+            color: $secondColor
+            transition: 0.5s all
+        &__image
+            width: 100%
+            height: auto
+        &__markItem
+            display: flex
+            position: absolute
+            right: 0
+            border-radius: 5px
+            width: 62px
+            height: 33px
+            margin: 13px
+            justify-content: center
+            align-items: center
+            color: $mainColor
+            font-weight: bold
+        &__movieTitle
+            font-weight: bold
+            font-size: 18px
+            color: $mainColor
+            margin-top: 3px
+        &__movieGanre
+            font-weight: 400
+            font-size: 15px
+            color: $thirdColor     
+.cinemaNow
+    background: url(../images/main.jpg) top -80px center/105% no-repeat
+    width: 100%
+    position: relative
+    z-index: 0
+    .movieCards
+        position: relative
+        display: block
+        height: fit-content
+        min-height: 800px
+        transition: 0.5s all 
+        .cardItem
+            max-width: 340px
+            width: fit-content
+            max-height: 540px
+            height: 520px
+            display: inline-flex
+            flex-direction: column
+            justify-content: space-between
+            position: relative
+            margin: 0 8.75px 33px 8.75px
+        &_fullHeight
+            max-height: fit-content
+    .buttonMore
+        display: block
+        border-radius: 10px
+        width: 200px
+        height: 71px
+        border: 2px solid $mainColor
+        background: none
+        color: $mainColor
+        font-weight: bold
+        font-size: 18px
+        line-height: 167%
+        opacity: 100
+        transition: 0.3s all
+        &:hover
+            color: $secondColor
+            background: $mainColor
+            box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0.7)
+        &__box
+            position: relative
+            z-index: 1
+            height: 175px
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            a
+                text-decoration: none
+
+.header
+    width: 100%
+    height: 110px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+    .navigation
+        // width: 760px
+        width: 900px
+        height: 50px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            color: $mainColor
+            text-decoration: none
+            font-weight: bold
+            text-shadow: 0 0 10px rgba(255,255,255,.7)
+    .interactivElements  
+        // display: flex
+        // align-items: center
+        // justify-content: space-between
+        // width: 205px
+        width: fit-content
+        .searchButton
+            border-radius: 10px
+            width: 55px
+            height: 52px
+            div
+                display: block
+                margin: 0 auto
+                width: 15px
+                height: 15px
+                img
+                    width: 100%
+        .autorisation
+            border-radius: 10px
+            width: 138px
+            height: 53px
+            box-shadow: 0 0 15px 0 rgba(72, 113, 255, 0.8)
+            background: $secondColor
+            color: $mainColor
+            font-weight: bold
+.trailer
+    position: relative
+    z-index: 1
+    height: fit-content
+    margin-bottom: 93px
+    .subheader
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 65px
+    &__title
+        @include forTitle
+    &__more
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 201px
+        cursor: pointer
+        a
+            text-decoration: none
+            font-weight: bold
+            font-size: 22px
+            color: $mainColor
+    &__video
+        width: 100%
+        border-radius: 10px
+    &__openTrailer
+        width: 100%
+        height: fit-content
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        margin-bottom: 37px
+        .player-tools
+            position: absolute
+            cursor: pointer
+            width: 100%
+            height: 100%
+            button
+                background: none
+                border: none
+            &:hover .fa-solid
+                transition: 0.3s all
+                color: #ffffffb4
+            .fa-solid
+                font-size: 60px
+                color: #ffffff00
+                cursor: pointer
+                transition: 0.3s all
+                &:hover
+                    color: $mainColor
+                    text-shadow: 0 0 10px rgba(255,255,255,.7)
+            .play-pause
+                height: 90%
+                width: 100%
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                transition: 0.3s all
+                i
+                    color: #ffffff00 !important
+                &:hover i
+                    color: #ffffff !important
+                    text-shadow: 0 0 10px rgba(255,255,255,.7)
+            .progress
+                height: 26px
+                width: 1150px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                position: absolute
+                bottom: 2.5%
+                left: 15%
+                color: #ffffff00
+                font-size: 20px
+                transition: 0.3s all
+                progress
+                    width: 1060px
+                    height: 7px
+                    transition: 0.3s all
+                progress::-webkit-progress-bar 
+                    background: rgba(255, 255, 255, 0)
+                    box-shadow: 0 0 13px 0 rgba(255, 255, 255, 0)
+                    border-radius: 100px
+                    transition: 0.3s all
+                progress::-webkit-progress-value 
+                    border-radius: 100px
+                    background: rgba(72, 112, 255, 0)
+                    box-shadow: 0 0 13px 0 rgba(72, 112, 255, 0)
+                    transition: 0.3s all
+                progress::-moz-progress-bar 
+                    background: rgba(255, 255, 255, 0)
+                    box-shadow: 0 0 13px 0 rgba(255, 255, 255, 0)
+                    border-radius: 100px
+                    transition: 0.3s all
+                progress::-moz-progress-value 
+                    border-radius: 100px
+                    background: rgba(72, 112, 255, 0)
+                    box-shadow: 0 0 13px 0 rgba(72, 112, 255, 0)
+                    transition: 0.3s all
+                
+            &:hover .progress
+                color: $mainColor
+                progress::-webkit-progress-bar 
+                    background: $mainColor
+                    box-shadow: 0 0 13px 0 rgba(255, 255, 255, 0.5)
+                    border-radius: 100px
+                progress::-webkit-progress-value 
+                    border-radius: 100px
+                    background: $secondColor
+                    box-shadow: 0 0 13px 0 rgba(72, 112, 255, 0.7)
+                progress::-moz-progress-bar 
+                    background: $mainColor
+                    box-shadow: 0 0 13px 0 rgba(255, 255, 255, 0.5)
+                    border-radius: 100px
+                progress::-moz-progress-value 
+                    border-radius: 100px
+                    background: $secondColor
+                    box-shadow: 0 0 13px 0 rgba(72, 112, 255, 0.7)
+            .scrin-mod
+                position: absolute
+                bottom: 2.5%
+                right: 1.5%
+                i 
+                    margin-top: 5px
+                    font-size: 25px
+            .volume-tools
+                display: flex
+                justify-content: center
+                align-items: center
+                position: absolute
+                bottom: 2.5%
+                left: 1.5%
+            .volume-none
+                margin-right: 10px
+                i 
+                    margin-top: 5px
+                    font-size: 25px
+            .volume 
+                -webkit-appearance: none !important
+                background: #ffffff00
+                box-shadow: 00 0 15px 0 rgba(255, 255, 255, 0)
+                height: 7px
+                border-radius: 100px
+                transition: 0.3s all
+                cursor: pointer
+            .volume::-webkit-slider-thumb 
+                -webkit-appearance: none !important
+                background: #ffffff00
+                box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0)
+                border: 3.5px solid #3656cb00
+                border-radius: 100px
+                height: 15px
+                width: 15px
+                transition: 0.3s all
+            .volume
+                -mozilla-appearance: none !important
+                background: #ffffff00
+                box-shadow: 00 0 15px 0 rgba(255, 255, 255, 0)
+                height: 7px
+                border-radius: 100px
+                transition: 0.3s all
+            .volume::-mozilla-slider-thumb 
+                -mozilla-appearance: none !important
+                background: #ffffff00
+                box-shadow: 0 0 15px 0 rgba(255, 255, 255, 0)
+                border: 3.5px solid #3656cb00
+                border-radius: 100px
+                height: 15px
+                width: 15px
+                transition: 0.3s all
+            &:hover .volume 
+                -webkit-appearance: none !important
+                background: $mainColor
+                box-shadow: 0 0 15px 0 rgba(255,255,255,.7)
+                height: 7px
+                border-radius: 100px
+                transition: 0.3s all
+            &:hover .volume::-webkit-slider-thumb 
+                -webkit-appearance: none !important
+                background: $mainColor
+                box-shadow: 0 0 15px 0 rgba(72,113,255,.8)
+                border: 3.5px solid $secondColor
+                border-radius: 100px
+                height: 15px
+                width: 15px
+                transition: 0.3s all
+            &:hover .volume
+                -mozilla-appearance: none !important
+                background: $mainColor
+                box-shadow: 0 0 15px 0 rgba(255,255,255,.7)
+                height: 7px
+                border-radius: 100px
+                transition: 0.3s all
+            &:hover .volume::-mozilla-slider-thumb 
+                -mozilla-appearance: none !important
+                background: $mainColor
+                box-shadow: 0 0 15px 0 rgba(72,113,255,.8)
+                border: 3.5px solid $secondColor
+                border-radius: 100px
+                height: 15px
+                width: 15px
+                transition: 0.3s all
+
+    .trailerDescr
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 43px
+        &__title
+            @include forTitle
+            font-size: 45px
+            margin-right: 29px
+        .firstFlex
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__social
+            transition: 1s all
+            display: flex
+            height: 20px
+            align-items: center
+            justify-content: space-between
+        &__social>div, a
+            display: inline-block
+            margin: 0 8px
+            font-size: 15px
+            color: #6d7792
+            cursor: pointer
+            transition: 0.3s all
+            &:hover
+                transition: 0.3s all
+                font-size: 16px
+                margin: 0 7px
+                color: $mainColor
+            &:nth-child(5)
+                margin: 0 72px
+        .secondFlex
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: fit-content
+            .markBorder
+                border-radius: 10px
+                width: 58px
+                height: 58px
+                background: #1b2133
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                margin-left: 8px
+                position: relative
+                color: $mainColor
+                .points
+                    position: absolute
+                    top: 110%
+                &:hover .fa-solid
+                    font-size: 22px
+                    color: $secondColor
+                    transition: 0.3s all
+                .fa-solid
+                    font-size: 20px
+                    color: $mainColor
+    &__scrollDewider
+        border-radius: 10px
+        width: 1430px
+        height: 7px
+        background: #1b2133
+        margin-bottom: 23px
+    .trailer__slider
+        margin-top: 23px
+        overflow-y: hidden
+        overflow-x: scroll
+        height: 323px
+        width: 100%
+        display: flex
+        .s-box
+            min-width: 1430px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &:nth-child(1)
+                margin-right: 20px
+        &::-webkit-scrollbar
+            height: 7px
+        &::-webkit-scrollbar-thumb
+            height: 7px
+        &::-mozilla-scrollbar
+            width: 7px
+        &::-mozilla-scrollbar-thumb
+            width: 7px
+        .sliderItem
+            height: fit-content
+            max-width: 343px
+            width: fit-content
+        .closeTrailer
+            height: fit-content
+            display: flex
+            justify-content: center
+            align-items: center
+            position: relative
+            cursor: pointer
+            &::after
+                content: ''
+                position: absolute
+                border-radius: 10px
+                height: 100%
+                width: 100%
+                opacity: 0
+                background: rgba(54, 86, 203, 0.445)
+            .activeCard
+                background: $mainColor
+                border-radius: 10px
+                width: 210px
+                height: 65px
+                z-index: 2
+                font-weight: 700
+                font-size: 18px
+                line-height: 167%
+                text-align: center
+                color: $secondColor
+                pointer-events: none
+                opacity: 0
+                display: flex
+                transition: 0.5s all
+            .fa-play-events-none
+                pointer-events: none
+            &:hover>div>.fa-play
+                transition: 0.3s all
+                color: #ffffff7e
+                z-index: 2
+            &:hover
+                &::after
+                    opacity: 100
+                    transition: 0.5s all
+            &_active
+                .activeCard
+                    opacity: 100
+                    transition: 0.5s all
+                &::after
+                    opacity: 100
+                    transition: 0.5s all
+                .fa-play
+                    transition: 0.3s all
+                    opacity: 0
+                    display: none
+            img
+                width: 100%
+            div
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 100%
+                .fa-play
+                    font-size: 40px
+                    color: $mainColor
+            &__title
+                margin-top: 17px
+                font-weight: bold
+                font-size: 20px
+                color: $mainColor
+.popular
+    background: none
+    min-height: fit-content
+    &__slider-window
+        overflow: hidden
+    &__slider-inner
+        display: flex
+        transition: 0.5s all
+    .subheader__list
+        width: 490px
+    .cardItem
+        margin-right: 23px
+        margin-bottom: 0
+.sliderClicker
+    margin: 54px auto
+    width: 135px
+    height: 24px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    color: $mainColor
+    button
+        width: 25px
+        height: 24px
+        background: none
+.persons
+    margin-bottom: 63px
+    .subheader__list
+        width: 295px
+    .personsSubcontainer
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &__Item
+            width: 444px
+            height: 444px
+            cursor: pointer
+            &:last-child
+                width: 497px
+                padding: 29px 34px
+                .otherPlace
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: center
+                    height: 100%
+                    .place
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        width: 100%
+                        height: fit-content
+                    .nameRus
+                        font-weight: 700
+                        font-size: 20px
+                        color: $mainColor
+                    .nameEng
+                        font-weight: 600
+                        font-size: 15px
+                        color: #3b486b
+                        margin-top: 5px
+                    .age
+                        font-size: 14px
+                        color: $thirdColor
+                        margin-top: 10px
+                    .placeNum
+                        font-weight: 600
+                        font-size: 15px
+                        color: $thirdColor
+            .bestPlace
+                width: 100%
+                height: 100%
+                position: relative
+                img 
+                    width: 100%
+                    position: absolute
+            .dataWrapper
+                position: absolute
+                width: 100%
+                height: 100%
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                .box
+                    margin: 32px 35px
+                .place
+                    margin: 12px 16px
+                    font-size: 15px
+                    line-height: 133%
+                    color: $thirdColor
+                .nameRus
+                    font-weight: bold
+                    font-size: 27px
+                    color: #fff
+                .nameEng
+                    font-weight: 600
+                    font-size: 20px
+                    color: rgba(255, 255, 255, 0.35)
+                .age
+                    font-size: 15px
+                    line-height: 133%
+                    color: $thirdColor
+                    margin-top: 9px
+.lastNews
+    margin-bottom: 82px
+    .lastNewsTabs
+        width: 100%
+        height: 772px
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+        align-items: center
+        .tabcontent
+            position: relative
+            height: 772px
+            max-width: 1159px
+            width: 100%
+            .tabActiveImg
+                width: 100%
+                position: absolute
+            .box
+                height: calc( 100% - 74px )
+                width: calc( 100% - 64px )
+                position: absolute
+                margin: 37px 32px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                color: $mainColor
+                &__data
+                    .i
+                        display: inline-block
+                        margin-left: 15px
+                        color: #ffffff98
+                    span
+                        font-weight: 700
+                        font-size: 15px
+                        line-height: 191%
+                        margin-left: 0
+                &__descr
+                    .title
+                        font-weight: 900
+                        font-size: 45px
+                        margin-bottom: 20px
+                    .descr
+                        font-weight: 400
+                        font-size: 20px
+                        width: 890px
+        .tabcontainer
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            width: 255px
+            height: 100%
+            .tabItem
+                color: $mainColor
+                font-weight: bold
+                position: relative
+                width: 255px
+                height: 183px
+                cursor: pointer
+                &__pseudoButton
+                    pointer-events: none
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translateX(-50%) translateY(-50%)
+                    border: 2px solid $mainColor
+                    border-radius: 10px
+                    width: 180px
+                    height: 53px
+                    z-index: 3
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 18px
+                    line-height: 167%
+                    opacity: 0
+                .box
+                    height: calc( 100% - 36px )
+                    width: calc( 100% - 36px )
+                    position: absolute
+                    margin: 18px 
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                &::after
+                    content: ''
+                    position: absolute
+                    border-radius: 10px
+                    height: 100%
+                    width: 100%
+                    opacity: 0
+                    background: rgba(54, 86, 203, 0.445)
+                &:hover
+                    &::after
+                        opacity: 100
+                        transition: 0.5s all
+                    .box
+                        opacity: 0
+                        transition: 0.3s all
+                    .tabItem__pseudoButton
+                        opacity: 100
+                        transition: 0.5s all
+                &_active
+                    &::after
+                        opacity: 100
+                    .box
+                        opacity: 0
+                    .tabItem__pseudoButton
+                        color: $secondColor
+                        background: $mainColor
+                        opacity: 100
+                img
+                    position: absolute
+                    width: 100%
+.expected
+    background: #151a26
+    min-height: 1500px
+    padding-top: 50px
+    &__slider-window
+        overflow: hidden
+    &__slider-inner
+        display: flex
+        transition: 0.5s all
+    &__slide
+        margin-right: 23px
+    .sliderClicker
+        margin: 0
+    .movieCards
+        margin-bottom: 100px
+    .subheader
+        .box
+            display: flex
+            align-items: center
+        &__list
+            width: 340px
+        &__subtitle
+            margin-left: 35px
+            font-weight: 500
+            font-size: 20px
+            color: $mainColor
+        &__title
+            margin-top: -15px
+    .subscribe
+        width: 100%
+        height: 548px
+        background: url(../images/BG.png) center center/cover no-repeat
+        padding: 80px 0
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        &__content
+            height: 282px
+            width: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            .subheader
+                width: fit-content
+                margin-bottom: 10px 
+        &__descr
+            max-width: 704px
+            width: 100%
+            font-weight: 500
+            font-size: 22px
+            line-height: 140%
+            text-align: center
+            color: $mainColor
+            margin-bottom: 28px
+        &__interactiveEl
+            display: flex
+            justify-content: space-between
+            align-items: center
+            height: fit-content
+            width: 615px
+            margin-bottom: 28px
+            input
+                border-radius: 10px
+                width: 425px
+                height: 71px
+                background: $mainColor
+                padding: 0 25px
+                font-weight: 400
+                font-size: 17px
+                line-height: 167%
+                color: rgba(21, 26, 38, 0.6)
+                outline: none
+            .subscribeBtn
+                border-radius: 10px
+                width: 182px
+                height: 71px
+                background: $thirdColor
+                font-weight: 700
+                font-size: 18px
+                line-height: 167%
+                color: #151a26
+        .check
+            height: 25px
+            .customCheck
+                font-weight: 400
+                width: 470px
+                font-size: 17px
+                line-height: 140%
+                text-align: center
+                color: $mainColor
+                display: flex
+                justify-content: space-between
+                a
+                    color: $thirdColor
+                    text-decoration: none
+                    border-bottom: 1px solid $thirdColor
+                input
+                    -webkit-appearance: none
+                    -mozilla-appearance: none 
+                    position: absolute
+                    &:checked + .checkbox .checkMark
+                        display: block
+                .checkbox
+                    background: $mainColor
+                    border-radius: 2px
+                    width: 17px
+                    height: 17px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    cursor: pointer
+                    .checkMark
+                        display: none
+.filmBoxOffice
+    width: 100%
+    height: 142px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 96px
+    .subheader__list
+        z-index: 10
+    &__item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 245px
+        img
+            height: 100%
+    &__info
+        max-width: 138px
+        .title
+            font-weight: 700
+            font-size: 18px
+            color: $mainColor
+        .boxOffice
+            font-weight: 500
+            font-size: 15px
+            color: $thirdColor
+            margin-top: 12px
+        .boxOfficeOnWeek
+            margin-top: 2px
+            font-weight: 500
+            font-size: 14px
+            color: rgba(255, 255, 255, 0.41)
+.footer
+    background: #151a26
+    height: 300px
+    padding: 53px 0
+    &__politic
+        font-weight: 400
+        font-size: 15px
+        line-height: 119%
+        text-decoration: none
+        border-bottom: 1px solid rgba(227, 230, 240, 0.72)
+        text-align: center
+        color: rgba(227, 230, 240, 0.72)
+    &__con
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+    &__social
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 261px
+        height: 23px
+        div
+            height: 100%
+            width: 22px
+        i
+            cursor: pointer
+            font-size: 20px
+            color: #3c4767
+            &:hover
+                font-size: 22px
+                color: $mainColor
+    &__navigation
+        width: 930px
+        height: 30px
+        font-weight: 700
+        font-size: 17px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            color: $mainColor
+            text-decoration: none
+            font-weight: bold
+            text-shadow: 0 0 10px rgba(255,255,255,.7)
+    &__rightsProtect
+        font-weight: 400
+        font-size: 15px
+        line-height: 119%
+        text-align: center
+        color: rgba(227, 230, 240, 0.72)
+.pageup
+    position: fixed
+    display: none
+    z-index: 5
+    bottom: 25px
+    right: 50px
+    width: 58px
+    height: 58px
+    img
+        width: 100%

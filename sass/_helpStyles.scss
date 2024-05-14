@@ -1,0 +1,20 @@
+.show {
+    display:block;
+}
+.showInline {
+    display:inline-block;
+}
+.hide {
+    display:none!important; 
+}
+.fade {
+    animation: fade 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity:0.1;
+    } 
+    to {
+        opacity:1;
+    }
+}

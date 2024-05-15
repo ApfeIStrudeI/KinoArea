@@ -114,23 +114,26 @@ window.addEventListener('DOMContentLoaded', () => {
                         <button type="button" id=${this.buttonID} class="play-pause">
                             <i class="fa-solid fa-play"></i>
                         </button>
-                        <div class="volume-tools">
-                            <button type="button" id=${this.volNoneID} class="volume-none">
-                                <i class="fa-solid fa-volume-high"></i>
+                        <div class="bottom-tools">
+                            <div class="volume-tools">
+                                <button type="button" id=${this.volNoneID} class="volume-none">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </button>
+                                <div>
+                                    <input type="range" class="volume" id=${this.volumeID} min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progressValue">
+                                    <p id=${this.currentTimeID}>00 : 00</p>
+                                </div>
+                                <progress id=${this.progressID} max="100" value="0"></progress>
+                            </div>
+                            <button type="button" id=${this.scrinModID} class="scrin-mod">
+                                <i class="fa-solid fa-expand"></i>
                             </button>
-                            <div>
-                                <input type="range" class="volume" id=${this.volumeID} min="0" max="100">
-                            </div>
                         </div>
-                        <div class="progress">
-                            <div class="progressValue">
-                                <p id=${this.currentTimeID}>00 : 00</p>
-                            </div>
-                            <progress id=${this.progressID} max="100" value="0"></progress>
-                        </div>
-                        <button type="button" id=${this.scrinModID} class="scrin-mod">
-                            <i class="fa-solid fa-expand"></i>
-                        </button>
+                        
                     </div>
                 </div>
                 <div class="trailerDescr">

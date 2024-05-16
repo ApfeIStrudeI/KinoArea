@@ -3,7 +3,6 @@
         right: 20px
         width: 40px
         height: 40px
-@media (max-width: 1690px) 
     .MIDDLESCREEN
         display: block
     .DESKTOP
@@ -211,7 +210,7 @@
                     font-size: 15px
     .popular
         .cardItem
-            margin-right: 10.7px
+            margin-right: 11px
             &__movieTitle
                 font-size: 13.5px
                 margin-bottom: 2.5px
@@ -269,6 +268,9 @@
             height: 42px
         .lastNewsTabs
             flex-direction: column-reverse
+            .lastNewsSliderWindow
+                height: fit-content
+                width: inherit
             .tabcontent
                 height: 100%
                 .box
@@ -291,7 +293,7 @@
             .tabcontainer
                 flex-direction: row
                 width: 100%
-                height: 255px
+                height: 200px
                 .tabItem
                     width: 205px
                     height: 147px
@@ -325,7 +327,7 @@
         .second-subtitle
             font-size: 17px
         &__slide
-            margin-right: 10.7px
+            margin-right: 11px
         .movieCards
             margin-bottom: 20px
         .subheader
@@ -384,3 +386,214 @@
         &__navigation
             width: 100%
             font-size: 15px
+@media (max-width: 999px) 
+    .pageup
+        right: 9.5px
+        width: 35px
+        height: 35px
+    .container
+        max-width: 660px
+    .subheader
+        height: 85px
+        font-size: 35px
+        &__item
+            font-size: 15px
+        &__list
+            width: 95%
+    .header
+        margin-bottom: 50px
+        height: 80px
+        .logo
+            margin-top: 7px
+        .navigation
+            width: 135%
+            a
+                font-size: 12px
+        .searchButton
+            border-radius: 5px
+            width: 93px
+            height: 38px
+            div
+                font-size: 12px
+                .search
+                    display: block
+        .interactivElements
+            .autorisation
+                font-size: 12px
+                border-radius: 5px
+                width: 93px
+                height: 38px
+    .movieCards
+        .cardItem
+            max-width: 210px
+            max-height: 330px
+            height: 325px
+            margin-bottom: 30px
+    .cinemaNow
+        background: url(../images/main.jpg) top -10px center/105% no-repeat
+        .movieCards
+            .cardItem
+                display: inline-flex
+                margin: 0 5px 30px 5px
+        .buttonMore
+            width: 160px
+            height: 49px
+            font-size: 15px
+            &__box
+                height: 120px
+    .trailer
+        .subheader
+            margin-bottom: 23px
+            flex-direction: row
+            height: 32px
+        &__title
+            @include forTitle
+            font-size: 35px
+        &__more
+            width: 140px
+            img
+                width: 23px
+            a
+                font-size: 16px
+        &__openTrailer
+            .player-tools
+                .fa-solid
+                    font-size: 35px
+                .progress
+                    justify-content: space-evenly
+                    align-items: center
+                    font-size: 15px
+                    height: 20px
+                    width: 75%
+                    progress
+                        width: 85%
+                        height: 5px
+                .scrin-mod
+                    i 
+                        font-size: 18px
+                .volume-none
+                    i 
+                        font-size: 18px
+        .trailerDescr
+            margin-bottom: 25px
+            &__title
+                @include forTitle
+                font-size: 30px
+    .persons
+        .personsSubcontainer
+            flex-wrap: wrap
+            &__Item
+                width: 321px
+                height: 321px
+                &:last-child
+                    margin-top: 15px
+                    width: 661px
+                    padding: 21px 19px
+    .lastNews
+        .lastNewsTabs
+            height: 622px
+            .lastNewsSliderWindow
+                overflow-x: scroll
+                overflow-y: hidden
+                height: 350px
+                width: 100%
+                &::-webkit-scrollbar
+                    height: 5px
+                &::-webkit-scrollbar-thumb
+                    height: 5px
+                &::-mozilla-scrollbar
+                    width: 5px
+                &::-mozilla-scrollbar-thumb
+                    width: 5px
+            .tabcontent
+                .box
+                    height: 397px
+                    width: 613px
+                    margin: 21px 23px
+                    &__data
+                        span
+                            font-weight: 600
+                    &__descr
+                        .title
+                            font-size: 30px
+                        .descr
+                            font-size: 16px
+                            width: 600px
+            .tabcontainer
+                flex-direction: row
+                width: 850px
+                height: 255px
+                .tabItem
+                    width: 205px
+                    height: 147px
+                    &__pseudoButton
+                        width: 150px
+                        height: 49px
+                        font-size: 15px
+                    .box
+                        height: calc( 100% - 28px )
+                        width: calc( 100% - 30px )
+                        position: absolute
+                        margin: 14px 15px
+                        &__data
+                            font-size: 13px
+                            font-weight: 500
+                        &__descr
+                            font-size: 15px
+                            font-weight: 600
+    .expected
+        background: #151a26
+        min-height: 1000px
+        padding-top: 50px
+        .sliderClicker
+            font-size: 16px
+            margin: 2px 0 15px 0
+            button
+                width: 21px
+                height: 20px
+        .subscribe
+            height: 370px
+            padding: 36px 54px
+            &__content
+                height: 248px
+                width: 100%
+                .subheader
+                    margin-bottom: 0px
+                    &__title
+                        font-size: 35px
+            &__descr
+                font-size: 16px
+                margin-bottom: 20px
+            &__interactiveEl
+                width: 100%
+                height: 62px
+                input
+                    width: 378px
+                    font-size: 16px
+                .subscribeBtn
+                    font-size: 16px
+                    width: 164px
+    .filmBoxOffice
+        margin-bottom: 16px
+        &__item
+            margin: 8px 17px 23px 0
+            max-width: 203px
+            max-height: 118px
+            img
+                height: 108px
+                width: 70px
+        &__info
+            max-height: 80px
+            max-width: 120px
+            .title
+                font-size: 16px
+            .boxOffice
+                font-size: 13px
+                margin-top: 5px
+            .boxOfficeOnWeek
+                font-size: 12px
+    .footer
+        &__navigation
+            font-size: 13px
+
+// @media (max-width: 999px) 

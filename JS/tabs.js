@@ -10,7 +10,8 @@ window.addEventListener('DOMContentLoaded', () => {
             this.active = data.active;
             this.tabElement = data.tabElement;
             this.videoLibrary = data.videoLibrary;
-            this.button = data.button;
+            this.button = data.button,
+            this.mobilePlayButton = data.mobilePlayButton;
         }
         tabMechanism() {
             const tabs = this.tabs,
@@ -20,7 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
             let read = this.hover,
                 active = this.active,
                 videoLibrary = this.videoLibrary,
-                playButton = this.button;
+                playButton = this.button,
+                mobilePlayButton = this.mobilePlayButton;
 
             function hideTabContent() {
                 content.forEach(item => {
@@ -50,6 +52,9 @@ window.addEventListener('DOMContentLoaded', () => {
                             video.pause();
                         });
                         playButton.forEach(button => {
+                            button.innerHTML = '<i class="fa-solid fa-play"></i>';
+                        });
+                        mobilePlayButton.forEach(button => {
                             button.innerHTML = '<i class="fa-solid fa-play"></i>';
                         });
                     });
@@ -123,7 +128,8 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsParent: document.querySelectorAll('.s-box'),
         tabElement: 'closeTrailer',
         videoLibrary: document.querySelectorAll('.trailer__video'),
-        button: document.querySelectorAll('.play-pause')
+        button: document.querySelectorAll('.play-pause'),
+        mobilePlayButton: document.querySelectorAll('.playPauseMobile'),
     }).tabMechanism();
 
     // табы популярных персон

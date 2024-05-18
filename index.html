@@ -13,7 +13,51 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body unselectable="no">
+<body class="body" unselectable="no">
+    <nav class="mobile__menu">
+        <div class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#cinemaNowHeaderID">
+                <div>
+                    Афиша
+                </div>
+            </a>
+        </div>
+        <div class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#trailerHeaderID">
+                <div>
+                    Трейлеры
+                </div>
+            </a>
+        </div>
+        <div class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#popularHeaderID">
+                <div>
+                    Популярные фильмы
+                </div>
+            </a>
+        </div>
+        <div class="mobile__menu-item">
+            <a class="mobile__menu_link" href="#personsHeaderID">
+                <div>
+                    Персоны
+                </div>
+            </a>
+        </div>
+        <div class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#lastNewsHeaderID">
+                <div>
+                    Последние новости
+                </div>
+            </a>
+        </div>
+        <div class="mobile__menu-item">
+            <a class="mobile__menu-link" href="#expectedHeaderID">
+                <div>
+                    Ожидаемые новинки
+                </div>
+            </a>
+        </div>
+    </nav>
     <section id="up" class="cinemaNow">
         <div class="container">
             <header class="header">
@@ -25,7 +69,7 @@
                         </div>
                     </button>
                 </div>
-                <div class="nav-container">
+                <div class="nav-container NONEMOB">
                     <div class="logo">
                         <a href="#up"><img src="icons/logo.svg" alt="KinoArea"></a>
                     </div>
@@ -50,13 +94,35 @@
                         </div>
                     </nav>
                 </div>
-                <div class="interactivElements">
+                <div class="interactivElements NONEMOB">
                     <button class="searchButton DESKTOP">
                         <div><img src="icons/searchVector.svg" alt="search"></div>
                     </button>
                     <button class="autorisation">
                         <span>Войти</span>
                     </button>
+                </div>
+                <div class="headerMobile MOBILE">
+                    <div class="interactivElements">
+                        <button class="mobileMenuButton">
+                            <div class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </button>
+                        <button class="searchButton">
+                            <div><img src="icons/searchVector.svg" alt="search"></div>
+                        </button>
+                    </div>
+                    <div class="logo">
+                        <a id="headerLogo" href="#up"><img src="icons/logo.svg" alt="KinoArea"></a>
+                    </div>
+                    <div class="interactivElements">
+                        <button class="autorisation">
+                            <span>Войти</span>
+                        </button>
+                    </div>
                 </div>
             </header>
             <div class="subheader" id="cinemaNowHeaderID">
@@ -78,7 +144,7 @@
                 <!-- данные из js -->
             </div>
             <div class="buttonMore__box">
-                <a href="#up">
+                <a href="#cinemaNowHeaderID">
                     <button class="buttonMore">
                         <span>Все новинки</span>
                     </button>
@@ -605,7 +671,7 @@
                             <div class="checkbox">
                                 <img src="icons/checkbox.svg" class="checkMark">
                             </div>
-                            Соглашаюсь на условия <a href="#">политики конфиденциальности</a>
+                            <span>Соглашаюсь на условия</span> <a href="#">политики конфиденциальности</a>
                         </label>
                     </div>
                 </div>
@@ -652,12 +718,13 @@
     <a href="#up" class="pageup"><img src="icons/up.svg" alt="up"></a>
     <script src="https://kit.fontawesome.com/66e8b232e1.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="module" src="JS/mobileMenu.js"></script>
     <script type="module" src="JS/movieCards.js"></script>
-    <script type="module" src="JS/filterTabs.js"></script>
+    <script type="module" src="JS/filmBoxOffice.js"></script>
     <script type="module" src="JS/expectedMovCards.js"></script>
+    <script type="module" src="JS/filterTabs.js"></script>
     <script type="module" src="JS/trailers.js"></script>
     <script type="module" src="JS/newsTabs.js"></script>
-    <script type="module" src="JS/filmBoxOffice.js"></script>
     <script type="module" src="JS/tabs.js"></script>
     <script type="module" src="JS/sliders.js"></script>
     <script type="module" src="JS/up.js"></script>

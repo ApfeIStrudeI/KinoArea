@@ -1,14 +1,7 @@
-body
-    background: #1e2538
-    overflow-x: hidden
-button
-    cursor: pointer
-
 .container
     margin: 0 auto
     max-width: 1430px
     width: 100%
-
 .subheader
     width: 100%
     height: 83px
@@ -123,7 +116,6 @@ button
     background: url(../images/main.jpg) top -80px center/105% no-repeat
     width: 100%
     position: relative
-    z-index: 0
     .movieCards
         position: relative
         display: block
@@ -279,6 +271,7 @@ button
                 transition: 0.3s all
                 i
                     color: #ffffff00 !important
+                    text-shadow: 0 0 10px rgba(255,255,255,.0)
                 &:hover i
                     color: #ffffff !important
                     text-shadow: 0 0 10px rgba(255,255,255,.7)
@@ -399,7 +392,6 @@ button
                 background: $mainColor
                 box-shadow: 0 0 15px 0 rgba(72,113,255,.8)
                 border: 3.5px solid $secondColor
-
     .trailerDescr
         width: 100%
         display: flex
@@ -1004,4 +996,6 @@ button
 .MIDDLESCREEN
     display: none
 .MOBILE
+    display: none
+.mobile__menu
     display: none

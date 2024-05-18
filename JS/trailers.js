@@ -97,6 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             this.videoID = `${this.id}VideoID`;
             this.buttonID = `${this.id}ButtonID`;
+            this.mobButtonID = `${this.id}MobButtonID`;
             this.volumeID = `${this.id}VolumeID`;
             this.progressID = `${this.id}ProgressID`;
             this.currentTimeID = `${this.id}currentTimeID`;
@@ -111,10 +112,13 @@ window.addEventListener('DOMContentLoaded', () => {
                         <source src=${this.src} type="video/mp4">
                     </video>
                     <div class="player-tools" id=${this.playerToolsID}>
-                        <button type="button" id=${this.buttonID} class="play-pause">
+                        <button type="button" id=${this.buttonID} class="play-pause NONEMOB">
                             <i class="fa-solid fa-play"></i>
                         </button>
                         <div class="bottom-tools">
+                            <button type="button" id=${this.mobButtonID} class="playPauseMobile MOBILE">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
                             <div class="volume-tools">
                                 <button type="button" id=${this.volNoneID} class="volume-none">
                                     <i class="fa-solid fa-volume-high"></i>
@@ -168,6 +172,7 @@ window.addEventListener('DOMContentLoaded', () => {
             const video = document.querySelector(`#${this.videoID}`),
                   playerTools = document.querySelector(`#${this.playerToolsID}`),
                   playButton = document.querySelector(`#${this.buttonID}`),
+                  mobilePlayButton = document.querySelector(`#${this.mobButtonID}`),
                   volume = document.querySelector(`#${this.volumeID}`),
                   volOff = document.querySelector(`#${this.volNoneID}`),
                   progress = document.querySelector(`#${this.progressID}`),
@@ -182,6 +187,16 @@ window.addEventListener('DOMContentLoaded', () => {
                 } else {
                     video.pause();
                     playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+                }
+            });
+
+            mobilePlayButton.addEventListener("click", function() {
+                if (video.paused == true) {
+                    video.play();
+                    mobilePlayButton.innerHTML = '<i class="fa-solid fa-pause"></i>';
+                } else {
+                    video.pause();
+                    mobilePlayButton.innerHTML = '<i class="fa-solid fa-play"></i>';
                 }
             });
 

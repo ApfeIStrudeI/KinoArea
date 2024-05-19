@@ -28,7 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 let mediaLaptop = window.matchMedia("(min-width: 1000px)");
                 let bigTablet = window.matchMedia("(min-width: 768px)");
                 let tablet = window.matchMedia("(min-width: 425px)");
-                let mediaMobile = window.matchMedia("(max-width: 425px)");
+                let mediaMobile = window.matchMedia("(min-width: 380px)");
+                let mediaMiniMobile = window.matchMedia("(max-width: 380px)");
 
                 let thisSlideIndex = 0, thisItemWidth = 0;
                 
@@ -57,6 +58,12 @@ window.addEventListener('DOMContentLoaded', () => {
                     thisSlideIndex = 2;
                     thisItemWidth = '178px';
                 } else if ( mediaMobile.matches == true ) {
+                    document.querySelectorAll('.current').forEach((item) => {
+                        item.textContent = `2`;
+                    });
+                    thisSlideIndex = 2;
+                    thisItemWidth = '178px';
+                } else if ( mediaMiniMobile.matches == true ) {
                     document.querySelectorAll('.current').forEach((item) => {
                         item.textContent = `2`;
                     });
@@ -94,6 +101,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         offset = 0;
                     } else {
                         offset += c;
+                        console.log(itemWidth);
                     }
                     sliderInner.style.transform = `translateX(-${offset}px)`;
 

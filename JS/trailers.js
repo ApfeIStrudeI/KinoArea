@@ -254,6 +254,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 if (progress.value == 100) {
                     playButton.innerHTML = '<i class="fa-solid fa-arrows-rotate fa-spin"></i>';
+                    mobilePlayButton.innerHTML = '<i class="fa-solid fa-arrows-rotate fa-spin"></i>';
                     playerTools.style.background = '#375ee866';
                     playerTools.style.borderRadius = '10px';
                 } else {

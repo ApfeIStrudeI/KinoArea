@@ -902,6 +902,7 @@
                     .age
                         font-size: 11px
     .lastNews
+        width: 100%
         .subheader
             flex-wrap: wrap
             margin-bottom: 15px
@@ -921,8 +922,10 @@
                 font-size: 14px
         .lastNewsTabs
             flex-direction: column
+            width: 100%
+            height: fit-content
             .lastNewsSliderWindow
-                height: 220px
+                height: fit-content
             .tabcontainer
                 width: 743px
                 height: 150px
@@ -945,25 +948,31 @@
                             font-weight: 500
                         &__descr
                             font-size: 12px
-                            font-weight: 600
+                            font-weight: 600                            
             .tabcontent
                 margin-top: 20px
                 border-radius: 10px
                 background: #151a26
-                height: 110%
-                img
+                width: 100%
+                height: fit-content
+                position: static
+                .tabActiveImg
+                    position: static
                     border-radius: 10px
                 .box
                     display: block
                     height: 100% 
+                    position: static
                     width: 100% 
-                    margin: 15px
+                    margin: 0
+                    padding: 10px 20px 20px 20px
                     &__data
                         font-size: 12px
+                        margin-bottom: 20px
                         span
                             font-size: 12px
                     &__descr
-                        position: absolute
+                        position: static
                         bottom: 35px
                         .title
                             font-weight: 500
@@ -972,7 +981,7 @@
                             line-height: 20px
                         .descr
                             font-weight: 300
-                            font-size: 12px
+                            font-size: 13px
                             width: 90%
     .expected
         .subheader
@@ -1066,3 +1075,21 @@
                 margin-bottom: 10px
         &__rightsProtect
             margin-top: 20px
+@media (max-width: 424px) 
+    .container
+        max-width: 95%
+    .cinemaNow
+        .movieCards
+            width: 92%
+            margin: 0 auto
+    .popular__slider-window
+        width: 92%
+        margin: 0 auto
+    .persons
+        .personsSubcontainer
+            &__Item
+                width: 192px
+                height: 192px
+    .expected__slider-window
+        width: 92%
+        margin: 0 auto

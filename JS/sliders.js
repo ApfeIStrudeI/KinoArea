@@ -28,8 +28,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 let mediaLaptop = window.matchMedia("(min-width: 1000px)");
                 let bigTablet = window.matchMedia("(min-width: 768px)");
                 let tablet = window.matchMedia("(min-width: 425px)");
-                let mediaMobile = window.matchMedia("(min-width: 380px)");
-                let mediaMiniMobile = window.matchMedia("(max-width: 380px)");
+                let mediaMobile = window.matchMedia("(min-width: 416px)");
+                let mediaMiniMobile = window.matchMedia("(max-width: 416px)");
 
                 let thisSlideIndex = 0, thisItemWidth = 0;
                 
@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         item.textContent = `2`;
                     });
                     thisSlideIndex = 2;
-                    thisItemWidth = '145px';
+                    thisItemWidth = '150px';
                 }
 
                 let slideIndex = thisSlideIndex;

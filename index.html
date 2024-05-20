@@ -98,7 +98,7 @@
                     <button class="searchButton DESKTOP">
                         <div><img src="icons/searchVector.svg" alt="search"></div>
                     </button>
-                    <button class="autorisation">
+                    <button data-modal class="autorisation">
                         <span>Войти</span>
                     </button>
                 </div>
@@ -119,7 +119,7 @@
                         <a id="headerLogo" href="#up"><img src="icons/logo.svg" alt="KinoArea"></a>
                     </div>
                     <div class="interactivElements">
-                        <button class="autorisation">
+                        <button data-modal class="autorisation">
                             <span>Войти</span>
                         </button>
                     </div>
@@ -663,21 +663,23 @@
                     <div class="subscribe__descr">
                         Если хотиет быть в курсе последних новостей и новинок кино - заполните форму ниже и оформите бесплатную E-mail рассылку! 
                     </div>
-                    <div class="subscribe__interactiveEl">
-                        <input type="email" placeholder="Введите свой E-mail адрес">
-                        <button class="subscribeBtn">
-                            Подписаться
-                        </button>
-                    </div>
-                    <div class="check">
-                        <label for="agree" class="customCheck">
-                            <input type="checkbox" id="agree" name="agree" checked />
-                            <div class="checkbox">
-                                <img src="icons/checkbox.svg" class="checkMark">
-                            </div>
-                            <span>Соглашаюсь на условия</span> <a href="#">политики конфиденциальности</a>
-                        </label>
-                    </div>
+                    <form action="#" class="subscribe-form">
+                        <div class="subscribe__interactiveEl">
+                            <input required name="email" type="email"  placeholder="Введите свой E-mail адрес">
+                            <button class="subscribeBtn">
+                                <span>Подписаться</span>
+                            </button>
+                        </div>
+                        <div class="check">
+                            <label for="agree" class="customCheck">
+                                <input required type="checkbox" id="agree" name="agree" checked />
+                                <div class="checkbox">
+                                    <img src="icons/checkbox.svg" class="checkMark">
+                                </div>
+                                <span>Соглашаюсь на условия</span> <a href="#">политики конфиденциальности</a>
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -719,9 +721,85 @@
             </div>
         </div>
     </footer>
+    <div class="modal hide">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div>
+                    <div data-close class="modal__close">
+                        <img src="icons/VectorClose.svg" alt="&times;">
+                    </div>
+                    <div class="modal__inputWrapper">
+                        <div class="modal__formContainer hide registrationForm">
+                            <form action="#">
+                                <div class="modal__title">Зарегистрироваться</div>
+                                <input required placeholder="Имя" name="name" type="text" class="modal__input">
+
+                                <input required placeholder="Фамилия" name="surname" type="text" class="modal__input">
+
+                                <input required placeholder="Придумайте логин" name="nickname" type="text" class="modal__input">
+
+                                <input required placeholder="Придумайте пароль" name="password" type="number" class="modal__input">
+
+                                <input required placeholder="Повторите пароль" name="repeatpassword" type="number" class="modal__input">
+
+                                <input required placeholder="E-mail" name="email" type="email" class="modal__input">
+
+                                <div class="check">
+                                    <label for="politicagree" class="customCheck">
+                                        <input required type="checkbox" id="politicagree" name="politicagree" checked />
+                                        <div class="checkbox">
+                                            <img src="icons/checkbox.svg" class="checkMark">
+                                        </div>
+                                        <span>Соглашаюсь на условия</span> <a href="#">политики конфиденциальности</a>
+                                    </label>
+                                </div>
+
+                                <div class="check">
+                                    <label for="personalagree" class="customCheck">
+                                        <input required type="checkbox" id="personalagree" name="personalagree" checked />
+                                        <div class="checkbox">
+                                            <img src="icons/checkbox.svg" class="checkMark">
+                                        </div>
+                                        <span>Соглашаюсь на обработку персональных данных</span>
+                                    </label>
+                                </div>
+
+                                <button class="btn btn_yellow">
+                                    <span>Зарегистрироваться</span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="modal__formContainer autorisationForm">
+                            <form action="#">
+                                <div class="modal__title">Войти</div>
+                                <input required placeholder="Логин" name="nickname" type="text" class="modal__input">
+
+                                <input required placeholder="Пароль" name="password" type="number" class="modal__input">
+
+                                <button class="btn btn_yellow">
+                                    <span>Войти</span>
+                                </button>
+
+                                <button id="toRegistration" type="button" class="btn btn_dark">
+                                    <span>Зарегистрироваться</span>
+                                </button>
+                                <div class="footer__social">
+                                    <div><i class="fa-brands fa-vk"></i></div>
+                                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                                    <div><i class="fa-brands fa-twitter"></i></div>
+                                    <i class="fa-brands fa-google"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <a href="#up" class="pageup"><img src="icons/up.svg" alt="up"></a>
     <script src="https://kit.fontawesome.com/66e8b232e1.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="module" src="JS/modalwindows.js"></script>
     <script type="module" src="JS/mobileMenu.js"></script>
     <script type="module" src="JS/movieCards.js"></script>
     <script type="module" src="JS/filmBoxOffice.js"></script>

@@ -1,0 +1,103 @@
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(7, 10, 17, 0.85);
+    transition: 0.5s all;
+    .check {
+        width: 100%;
+        margin: 5px 0;
+        .customCheck {
+            font-weight: 400;
+            width: 100%;
+            font-size: 15px;
+            justify-content: flex-start;
+            div, span, a {
+                margin-right: 9px;
+            }
+        } 
+    }
+    &__dialog {
+        max-width: 815px;
+        margin: 100px auto;
+    }
+    &__content {
+        position: relative;
+        height: fit-content;
+        padding: 40px;
+        border-radius: 10px;
+        width: 815px;
+        background: #191e2e;
+    }
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        background-color: transparent;
+        cursor: pointer;
+        width: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 40px;
+        color: $mainColor;
+        text-align: center;
+        margin-bottom: 27px;
+        width: 422px;
+    }
+    &__inputWrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    &__formContainer form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer__social {
+            margin-top: 10px;
+            width: 40%;
+        }
+    }
+    &__input {
+        display: block;
+        margin: 7px 0;
+        border-radius: 10px;
+        width: 100%;
+        height: 67px;
+        padding: 0 25px;
+        outline: none;
+        background: #1e2538;
+        font-weight: 400;
+        font-size: 17px;
+        color: $mainColor;
+    }
+    .btn {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border-radius: 10px;
+        width: 100%;
+        height: 55px;
+        background: $thirdColor;
+        font-weight: 600;
+        font-size: 17px;
+        &_yellow {
+            background: $thirdColor;
+            color: #151a26;
+        }
+        &_dark {
+            font-weight: 400;
+            background: #1e2538;
+            color: $mainColor;
+        }
+    }
+}

@@ -1,7 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     class MovieCard {
-        constructor(src, mark, title, ganre, parentSelector, ...classes) {
+        constructor(src, href, mark, title, ganre, parentSelector, ...classes) {
             this.src = src;
+            this.href = href;
             this.mark = parseFloat(mark).toFixed(2);
             this.title = title;
             this.ganre = ganre;
@@ -73,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
             element.innerHTML = `
                 <div class="cardItem__imageBox">
                     <img src=${this.src} class="cardItem__image">
-                    <div class="cardItem__rectangle"><div>Узнать больше</div></div>
+                    <a href=${this.href} class="cardItem__rectangle"><div>Узнать больше</div></a>
                 </div>
                 <div class="cardItem__markItem ${this.itemColor}"><div>${this.mark}</div></div>
                 <h4 class="cardItem__movieTitle ${dateClass}">
@@ -92,6 +93,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/escape.png',
+        'escape-from-pretoria.html',
         '6.7',
         'Побег из Претории',
         'Триллер',
@@ -100,6 +102,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/joker.png',
+        '#',
         '8.5',
         'Джокер',
         'Триллер, драма, криминал',
@@ -108,6 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/star-wars.png',
+        '#',
         '5.7',
         'Звёздные войны: Скайуокер. Восход',
         'Фантастика, фэнтези, боевик, приключения',
@@ -116,6 +120,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/gents.png',
+        '#',
         '8',
         'Джентльмены',
         'Боевик, комедия, криминал',
@@ -124,6 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/ford-vs-ferrari.png',
+        '#',
         '8.1',
         'Ford против Ferrari',
         'Биография, спорт, драма, боевик',
@@ -132,6 +138,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/3022.png',
+        '#',
         '4.9',
         '3022',
         'Фантастика, триллер',
@@ -140,6 +147,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/chickens.png',
+        '#',
         '6.2',
         'Хищные птицы: Потрясающая история Харли Квинн',
         'Боевик, криминал, комедия',
@@ -148,6 +156,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/bad-guys.png',
+        '#',
         '6.9',
         'Плохие парни навсегда',
         'Боевик, комедия, криминал',
@@ -158,6 +167,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/forrest-gump.png',
+        '#',
         '8.91',
         'Форрест Гамп',
         'Драма, комедия, мелодрама, история, военный',
@@ -167,6 +177,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/onece-upon-a-time-in-Hollywood.png',
+        '#',
         '7.7',
         'Однажды в… Голливуде',
         'Драма, комедия',
@@ -176,6 +187,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/hacksaw-ridge.png',
+        '#',
         '8.2',
         'По соображениям совести',
         'Биография, драма,  боевик',
@@ -185,6 +197,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/inglouriousbasterds.png',
+        '#',
         '8',
         'Бесславные ублюдки',
         'Драма, военный, комедия, боевик',
@@ -194,6 +207,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/jurassic-world.png',
+        '#',
         '6.94',
         'Мир Юрского Периода',
         'Фантастика, приключения, боевик',
@@ -203,6 +217,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/it.png',
+        '#',
         '7.34',
         'Оно',
         'Детектив, драма, фэнтези, ужасы',
@@ -212,6 +227,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/venom.png',
+        '#',
         '6.91',
         'Веном',
         'Ужасы, триллер, боевик, фантастика',
@@ -221,6 +237,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/joker.png',
+        '#',
         '8.5',
         'Джокер',
         'Триллер, драма, криминал',
@@ -230,6 +247,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/toy-story.png',
+        '#',
         '7.8',
         'История игрушек 4',
         'Мультфильм, фэнтези, комедия, приключения',
@@ -239,6 +257,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/Midsommar.png',
+        '#',
         '7.1',
         'Солнцестояние',
         'Ужасы, триллер, драма',
@@ -248,6 +267,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/django.png',
+        '#',
         '8.2',
         'Джанго освобождённый',
         'Вестерн, комедия, драма, боевик',
@@ -257,6 +277,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/bonetamagafk.png',
+        '#',
         '6.9',
         'Костяной томагавк',
         'Вестерн, ужасы',
@@ -266,6 +287,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/paddington.png',
+        '#',
         '8.1',
         'Приключения Паддингтона 2',
         'Фентези, комедия, приключения',
@@ -275,6 +297,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/velikan.png',
+        '#',
         '6.1',
         'Большой и добрый великан',
         'Фентези, приключения',
@@ -284,6 +307,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/macdack.png',
+        '#',
         '7.6',
         'Основатель',
         'Биография, драма',
@@ -293,6 +317,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/deadpool.png',
+        '#',
         '7.6',
         'Дэдпул',
         'Боевик, комедия',
@@ -302,6 +327,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/bro.png',
+        '#',
         '8.32',
         'Брат',
         'Драма, боевик',
@@ -311,6 +337,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/visit.png',
+        '#',
         '6.21',
         'Визит',
         'Ужасы',
@@ -320,6 +347,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/krampus.png',
+        '#',
         '5.8',
         'Крампус',
         'Ужасы, фэнтези, комедия',
@@ -329,6 +357,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/goosebumps.png',
+        '#',
         '6.24',
         'Ужастики',
         'Приключения, комедия, фэнтези',
@@ -338,6 +367,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/earth.png',
+        '#',
         '8.9',
         'Земля: Один потрясающий день',
         'Документальный, семейный',
@@ -347,6 +377,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/coco.png',
+        '#',
         '8.7',
         'Тайна Коко',
         'Фэнтези, комедия, приключения, семейный',
@@ -356,6 +387,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/van-gogh.png',
+        '#',
         '8.2',
         'Ван Гог. С любовью Винсент',
         'Биография, драма, преступление',
@@ -365,6 +397,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/goosebumps-2.png',
+        '#',
         '6.04',
         'Ужастики 2',
         'Фэнтези, комедия, приключения, семейный',
@@ -374,6 +407,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/house-that-jack-built.png',
+        '#',
         '7.02',
         'Дом, который построил Джек',
         'Триллер, драма, преступление, ужасы',
@@ -383,6 +417,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/hugo.png',
+        '#',
         '8.1',
         'Кузя и семейка троллей',
         'Мультфильм, семейный',
@@ -392,6 +427,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/maigret.png',
+        '#',
         '7.12',
         'Мегрэ: Ночь на перекрёстке',
         'Драма, преступление, детектив',
@@ -401,6 +437,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/klaus.png',
+        '#',
         '8.72',
         'Клаус',
         'Семейный, приключения',
@@ -410,6 +447,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/lion-the-king.png',
+        '#',
         '7.2',
         'Король лев',
         'Семейный, приключения',
@@ -419,6 +457,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/greenland.png',
+        '#',
         '6.8',
         'Гренландия',
         'боевик, драма',
@@ -428,6 +467,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/wolfs-legend.png',
+        '#',
         '8.2',
         'Легенда о волках',
         'боевик, драма, приключения, семейный',
@@ -437,6 +477,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/druk.png',
+        '#',
         '7.6',
         'Ещё по одной',
         'драма, комедия',
@@ -446,6 +487,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/alita.png',
+        '#',
         '7.22',
         'Алита: боевой ангел',
         'боевик, фантастика',
@@ -455,6 +497,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/escape.png',
+        '#',
         '6.7',
         'Побег из Претории',
         'Триллер',

@@ -33,49 +33,6 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    // типа данные с сервера
-
-    new TrailerTab(
-        'images/trailers/mulan.png',
-        'Мулан',
-        '.trailer .trailer__slider .firstTS-box'
-    ).render();
-    new TrailerTab(
-        'images/trailers/forseage-9.png',
-        'Форсаж 9',
-        '.trailer .trailer__slider .firstTS-box'
-    ).render();
-    new TrailerTab(
-        'images/trailers/black-widow.png',
-        'Чёрная Вдова',
-        '.trailer .trailer__slider .firstTS-box'
-    ).render();
-    new TrailerTab(
-        'images/trailers/quiet-place.png',
-        'Тихое место 2',
-        '.trailer .trailer__slider .firstTS-box'
-    ).render();
-    new TrailerTab(
-        'images/trailers/escape.png',
-        'Побег из Претории',
-        '.trailer .trailer__slider .secondTS-box'
-    ).render();
-    new TrailerTab(
-        'images/trailers/Duna.png',
-        'Дюна',
-        '.trailer .trailer__slider .secondTS-box'
-    ).render();
-    new TrailerTab(
-        'images/trailers/sonic.png',
-        'Соник в кино',
-        '.trailer .trailer__slider .secondTS-box'
-    ).render();
-    new TrailerTab(
-        'images/trailers/adios.png',
-        'Прощай',
-        '.trailer .trailer__slider .secondTS-box'
-    ).render();
-
     class TrailerActiveTab extends TrailerTab {
         constructor(src, poster, title, id, likeVolume, disVolume, parentSelector, ...classes) {
             super(src, title, parentSelector, ...classes);
@@ -271,79 +228,137 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
+    const body = document.querySelector('.body');
+    if(!body.classList.contains('moviePageBody')){
+        // типа данные с сервера (табы трейлеров на главной)
 
-    // типа данные с сервера
+        new TrailerTab(
+            'images/trailers/mulan.png',
+            'Мулан',
+            '.trailer .trailer__slider .firstTS-box'
+        ).render();
+        new TrailerTab(
+            'images/trailers/forseage-9.png',
+            'Форсаж 9',
+            '.trailer .trailer__slider .firstTS-box'
+        ).render();
+        new TrailerTab(
+            'images/trailers/black-widow.png',
+            'Чёрная Вдова',
+            '.trailer .trailer__slider .firstTS-box'
+        ).render();
+        new TrailerTab(
+            'images/trailers/quiet-place.png',
+            'Тихое место 2',
+            '.trailer .trailer__slider .firstTS-box'
+        ).render();
+        new TrailerTab(
+            'images/trailers/escape.png',
+            'Побег из Претории',
+            '.trailer .trailer__slider .secondTS-box'
+        ).render();
+        new TrailerTab(
+            'images/trailers/Duna.png',
+            'Дюна',
+            '.trailer .trailer__slider .secondTS-box'
+        ).render();
+        new TrailerTab(
+            'images/trailers/sonic.png',
+            'Соник в кино',
+            '.trailer .trailer__slider .secondTS-box'
+        ).render();
+        new TrailerTab(
+            'images/trailers/adios.png',
+            'Прощай',
+            '.trailer .trailer__slider .secondTS-box'
+        ).render();
 
-    new TrailerActiveTab(
-        'videoDB/mulan.mp4',
-        'images/trailers/open-trailer-2.png',
-        'Мулан',
-        'mulan',
-        '2 365',
-        '510',
-        '.trailer .openTrailerBase'
-    ).render();
-    new TrailerActiveTab(
-        'videoDB/forseage-9.mp4',
-        'images/trailers/open-trailer.png',
-        'Форсаж 9',
-        'forsage9',
-        '3 245',
-        '420',
-        '.trailer .openTrailerBase'
-    ).render();
-    new TrailerActiveTab(
-        'videoDB/black-widow.mp4',
-        'images/trailers/open-trailer-3.png',
-        'Чёрная Вдова',
-        'blackwidow',
-        '4 005',
-        '620',
-        '.trailer .openTrailerBase'
-    ).render();
-    new TrailerActiveTab(
-        'videoDB/quiet-place-2.mp4',
-        'images/trailers/open-trailer-4.png',
-        'Тихое место 2',
-        'quietplace2',
-        '1 245',
-        '866',
-        '.trailer .openTrailerBase'
-    ).render();
-    new TrailerActiveTab(
-        'videoDB/escape.mp4',
-        'images/trailers/open-trailer-5.png',
-        'Побег из Претории',
-        'escape',
-        '942',
-        '82',
-        '.trailer .openTrailerBase'
-    ).render();
-    new TrailerActiveTab(
-        'videoDB/duna.mp4',
-        'images/trailers/open-trailer-6.png',
-        'Дюна',
-        'duna',
-        '1200',
-        '801',
-        '.trailer .openTrailerBase'
-    ).render();
-    new TrailerActiveTab(
-        'videoDB/sonic.mp4',
-        'images/trailers/open-trailer-7.png',
-        'Соник в кино',
-        'sonic',
-        '3480',
-        '953',
-        '.trailer .openTrailerBase'
-    ).render();
-    new TrailerActiveTab(
-        'videoDB/adios.mp4',
-        'images/trailers/open-trailer-8.png',
-        'Прощай',
-        'adios',
-        '581',
-        '252',
-        '.trailer .openTrailerBase'
-    ).render();
+        // типа данные с сервера (для главной страницы)
+
+        new TrailerActiveTab(
+            'videoDB/mulan.mp4',
+            'images/trailers/open-trailer-2.png',
+            'Мулан',
+            'mulan',
+            '2 365',
+            '510',
+            '.trailer .openTrailerBase'
+        ).render();
+        new TrailerActiveTab(
+            'videoDB/forseage-9.mp4',
+            'images/trailers/open-trailer.png',
+            'Форсаж 9',
+            'forsage9',
+            '3 245',
+            '420',
+            '.trailer .openTrailerBase'
+        ).render();
+        new TrailerActiveTab(
+            'videoDB/black-widow.mp4',
+            'images/trailers/open-trailer-3.png',
+            'Чёрная Вдова',
+            'blackwidow',
+            '4 005',
+            '620',
+            '.trailer .openTrailerBase'
+        ).render();
+        new TrailerActiveTab(
+            'videoDB/quiet-place-2.mp4',
+            'images/trailers/open-trailer-4.png',
+            'Тихое место 2',
+            'quietplace2',
+            '1 245',
+            '866',
+            '.trailer .openTrailerBase'
+        ).render();
+        new TrailerActiveTab(
+            'videoDB/escape.mp4',
+            'images/trailers/open-trailer-5.png',
+            'Побег из Претории',
+            'escape',
+            '942',
+            '82',
+            '.trailer .openTrailerBase'
+        ).render();
+        new TrailerActiveTab(
+            'videoDB/duna.mp4',
+            'images/trailers/open-trailer-6.png',
+            'Дюна',
+            'duna',
+            '1200',
+            '801',
+            '.trailer .openTrailerBase'
+        ).render();
+        new TrailerActiveTab(
+            'videoDB/sonic.mp4',
+            'images/trailers/open-trailer-7.png',
+            'Соник в кино',
+            'sonic',
+            '3480',
+            '953',
+            '.trailer .openTrailerBase'
+        ).render();
+        new TrailerActiveTab(
+            'videoDB/adios.mp4',
+            'images/trailers/open-trailer-8.png',
+            'Прощай',
+            'adios',
+            '581',
+            '252',
+            '.trailer .openTrailerBase'
+        ).render();
+    } else if(body.classList.contains('escape-from-pretoria')) {
+       
+        // типа данные с сервера (для побега из претории)
+
+        new TrailerActiveTab(
+            'videoDB/escape.mp4',
+            'images/trailers/open-trailer-5.png',
+            'Побег из Претории',
+            'escape',
+            '942',
+            '82',
+            '.movieTrailer .openTrailerBase'
+        ).render();
+    }
 });

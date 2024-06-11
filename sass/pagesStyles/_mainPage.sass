@@ -32,6 +32,10 @@
         &_active
             color: $mainColor
             text-shadow: 0 0 10px rgba(255,255,255,.7)
+    &__subtitle
+        font-weight: 500
+        color: $mainColor
+        font-size: 25px
 .movieCards
     display: flex
     flex-wrap: wrap
@@ -68,6 +72,7 @@
             &:hover .cardItem__rectangle
                 opacity: 100
         &__rectangle
+            text-decoration: none
             cursor: pointer
             opacity: 0
             position: absolute
@@ -106,14 +111,14 @@
         &__movieTitle
             font-weight: bold
             font-size: 18px
-            color: $mainColor
+            color: $mainColor 
             margin-top: 3px
         &__movieGanre
             font-weight: 400
             font-size: 15px
             color: $thirdColor     
 .cinemaNow
-    background: url(../images/main.jpg) top -80px center/105% no-repeat
+    background: url(../images/page-bg/main.png) top center/105% no-repeat
     width: 100%
     position: relative
     .movieCards
@@ -200,6 +205,36 @@
             background: $secondColor
             color: $mainColor
             font-weight: bold
+.markBorder
+    border-radius: 10px
+    width: 58px
+    height: 58px
+    background: #1b2133
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    margin-left: 8px
+    position: relative
+    color: $mainColor
+    .points
+        position: absolute
+        top: 110%
+    &:hover:nth-child(1)
+        text-shadow: 0 0 10px rgba(72,113,255,.8)
+        .points
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
+    &:hover:nth-child(2)
+        text-shadow: 0 0 10px rgba(255,72,72,.8)
+        .points
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
+    &:hover .fa-solid
+        font-size: 22px
+        color: $mainColor
+        transition: 0.3s all
+    .fa-solid
+        font-size: 20px
+        color: rgba(255,255,255,.7)
 .trailer
     position: relative
     z-index: 1
@@ -392,75 +427,6 @@
                 background: $mainColor
                 box-shadow: 0 0 15px 0 rgba(72,113,255,.8)
                 border: 3.5px solid $secondColor
-    .trailerDescr
-        width: 100%
-        display: flex
-        justify-content: space-between
-        align-items: center
-        margin-bottom: 43px
-        &__title
-            @include forTitle
-            font-size: 45px
-            margin-right: 29px
-        .firstFlex
-            display: flex
-            justify-content: space-between
-            align-items: center
-        &__social
-            transition: 1s all
-            display: flex
-            height: 20px
-            align-items: center
-            justify-content: space-between
-        &__social>div, a
-            display: inline-block
-            margin: 0 8px
-            font-size: 15px
-            color: #6d7792
-            cursor: pointer
-            transition: 0.3s all
-            &:hover
-                transition: 0.3s all
-                font-size: 16px
-                margin: 0 7px
-                color: $mainColor
-            &:nth-child(5)
-                margin: 0 72px
-        .secondFlex
-            display: flex
-            justify-content: space-between
-            align-items: center
-            width: fit-content
-            .markBorder
-                border-radius: 10px
-                width: 58px
-                height: 58px
-                background: #1b2133
-                display: flex
-                justify-content: center
-                align-items: center
-                cursor: pointer
-                margin-left: 8px
-                position: relative
-                color: $mainColor
-                .points
-                    position: absolute
-                    top: 110%
-                &:hover:nth-child(1)
-                    text-shadow: 0 0 10px rgba(72,113,255,.8)
-                    .points
-                        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
-                &:hover:nth-child(2)
-                    text-shadow: 0 0 10px rgba(255,72,72,.8)
-                    .points
-                        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5)
-                &:hover .fa-solid
-                    font-size: 22px
-                    color: $mainColor
-                    transition: 0.3s all
-                .fa-solid
-                    font-size: 20px
-                    color: rgba(255,255,255,.7)
     &__scrollDewider
         border-radius: 10px
         width: 1430px
@@ -561,6 +527,45 @@
                 font-weight: bold
                 font-size: 20px
                 color: $mainColor
+.trailerDescr
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 43px
+    &__title
+        @include forTitle
+        font-size: 45px
+        margin-right: 29px
+    .firstFlex
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__social
+        transition: 1s all
+        display: flex
+        height: 20px
+        align-items: center
+        justify-content: space-between
+    &__social>div, a
+        display: inline-block
+        margin: 0 8px
+        font-size: 15px
+        color: #6d7792
+        cursor: pointer
+        transition: 0.3s all
+        &:hover
+            transition: 0.3s all
+            font-size: 16px
+            margin: 0 7px
+            color: $mainColor
+        &:nth-child(5)
+            margin: 0 72px
+    .secondFlex
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: fit-content
 .popular
     background: none
     min-height: fit-content
@@ -812,65 +817,65 @@
             color: $mainColor
         &__title
             margin-top: -15px
-    .subscribe
+.subscribe
+    width: 100%
+    height: 548px
+    background: url(../images/page-bg/BG.png) center center/cover no-repeat
+    padding: 80px 0
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    .subscribe-form
         width: 100%
-        height: 548px
-        background: url(../images/BG.png) center center/cover no-repeat
-        padding: 80px 0
         display: flex
         flex-direction: column
+        align-items: center
+    &__content
+        height: 282px
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        .subheader
+            width: fit-content
+            margin-bottom: 10px 
+    &__descr
+        max-width: 704px
+        width: 100%
+        font-weight: 500
+        font-size: 22px
+        line-height: 140%
+        text-align: center
+        color: $mainColor
+        margin-bottom: 28px
+    &__interactiveEl
+        display: flex
         justify-content: space-between
         align-items: center
-        .subscribe-form
-            width: 100%
-            display: flex
-            flex-direction: column
-            align-items: center
-        &__content
-            height: 282px
-            width: 100%
-            display: flex
-            flex-direction: column
-            align-items: center
-            .subheader
-                width: fit-content
-                margin-bottom: 10px 
-        &__descr
-            max-width: 704px
-            width: 100%
-            font-weight: 500
-            font-size: 22px
-            line-height: 140%
-            text-align: center
-            color: $mainColor
-            margin-bottom: 28px
-        &__interactiveEl
-            display: flex
-            justify-content: space-between
-            align-items: center
-            height: fit-content
-            width: 615px
-            margin-bottom: 28px
-            input
-                border-radius: 10px
-                width: 425px
-                height: 71px
-                background: $mainColor
-                padding: 0 25px
-                font-weight: 400
-                font-size: 17px
-                line-height: 167%
-                color: rgba(21, 26, 38, 0.6)
-                outline: none
-            .subscribeBtn
-                border-radius: 10px
-                width: 182px
-                height: 71px
-                background: $thirdColor
-                font-weight: 700
-                font-size: 18px
-                line-height: 167%
-                color: #151a26
+        height: fit-content
+        width: 615px
+        margin-bottom: 28px
+        input
+            border-radius: 10px
+            width: 425px
+            height: 71px
+            background: $mainColor
+            padding: 0 25px
+            font-weight: 400
+            font-size: 17px
+            line-height: 167%
+            color: rgba(21, 26, 38, 0.6)
+            outline: none
+        .subscribeBtn
+            border-radius: 10px
+            width: 182px
+            height: 71px
+            background: $thirdColor
+            font-weight: 700
+            font-size: 18px
+            line-height: 167%
+            color: #151a26
 .check
     height: 25px
     .customCheck

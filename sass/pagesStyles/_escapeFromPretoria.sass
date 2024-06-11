@@ -1,0 +1,388 @@
+.position
+    &__nameRus
+        font-weight: 600
+        font-size: 18px
+        color: $mainColor
+    &__nameEng
+        font-weight: 400
+        font-size: 14px
+        color: rgba(255, 255, 255, 0.7)
+        margin-top: 5px
+    &__position
+        font-weight: 400
+        font-size: 16px
+        color: $thirdColor
+        margin-top: 5px
+.movieDescription
+    background: url(../images/page-bg/escape-from-pretoria-bg.png) top center/105% no-repeat
+    width: 100%
+    position: relative 
+    &__container
+        max-width: 1150px
+        width: 100%
+        margin: 0 auto
+    &__firstFlexBox
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        h2
+            margin-top: 35px
+        .second-con
+            width: 705px
+        .third-con
+            height: 120px
+            width: 100%
+            display: flex
+            align-items: center
+            .markBorder
+                margin: 0 10px 0 0
+                &:nth-child(3)
+                    width: 170px
+                    margin: 0 10px
+                &:nth-child(4)
+                    margin: 0 0 0 10px
+                .procent
+                    font-weight: 500
+                    font-size: 14px
+                    color: #ccdacaa2
+            .markBorder-procent
+                display: grid
+                position: relative
+                &::after
+                    content: ''
+                    border-radius: 10px
+                    background: #3be21d62
+                    position: absolute
+                    justify-self: flex-start
+                    height: 100%
+                    width: 85%
+            span
+                margin: 0 10px
+                font-weight: 500
+                font-size: 14px
+                color: #e8e9eb
+    &__secondFlexBox
+        display: grid
+        width: 100%
+        grid-template-columns: 158px 1fr 158px 1fr
+        grid-template-areas: "title descr title descr"
+        font-size: 18px
+        gap: 25px 0 
+        margin-bottom: 50px
+        .descr
+            grid-area: "descr"
+            font-weight: 200
+            text-decoration: underline
+            color: $thirdColor
+        .title
+            grid-area: "title"
+            font-weight: 600
+            color: $mainColor
+    &__thirdFlexBox
+        height: fit-content
+        background: rgba(54, 87, 203, 0.3)
+        border-radius: 10px
+        margin-bottom: 50px
+        display: grid
+        grid-template-columns: 2fr repeat(3, 1fr)
+        padding: 36px 40px
+        .director > div
+            margin-left: 30px            
+        .director
+            display: flex
+            align-items: center
+            img
+                max-width: 149px
+        .movieInfo
+            display: flex
+            flex-direction: column
+            &__title
+                color: $mainColor
+                font-weight: 600
+                font-size: 18px
+                line-height: 28px
+            &__descr
+                display: flex
+                flex-direction: column
+                font-weight: 200
+                color: $thirdColor 
+                line-height: 28px
+.markElipsoids
+    color: $mainColor
+    display: flex
+    .mark
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: 14px 22px 20px 0
+        width: fit-content
+    img
+        width: 52px
+        position: relative
+        margin-bottom: 10px
+.paragraph
+    color: $mainColor
+    font-weight: 500
+    font-size: 20px
+    line-height: 167%
+    margin-bottom: 23px
+.watchTrailer
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &__button
+        border: 2px solid $mainColor
+        border-radius: 10px
+        background: none
+        width: 260px
+        height: 70px
+        color: $mainColor
+        font-weight: 700
+        font-size: 18px
+        line-height: 167%
+        margin-right: 30px
+        transition: 0.3s all
+        &:hover
+            background: $mainColor
+            color: $secondColor
+            box-shadow: 0 0 10px rgba(255,255,255,.7)
+        i
+            font-size: 21px
+    &__social 
+        width: 30% 
+        height: 40px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        i
+            font-size: 21px
+            color: rgba(255, 255, 255, 0.5)
+            transition: 0.3s all
+            cursor: pointer
+            &:hover
+                font-size: 23px
+                color: $mainColor
+                text-shadow: 0 0 10px rgba(255,255,255,.7)
+    &__social > div
+        width: 30px
+        &:last-child
+            width: 30px
+.actors
+    margin-bottom: 50px
+    .actors-area
+        display: grid
+        grid-template-columns: repeat(5, 248px)
+        gap: 47px
+        .actor-item
+            img 
+                border-radius: 5px
+                width: 100%
+                margin-bottom: 10px
+.achievement
+    margin: 90px 0
+    .subheader
+        margin-bottom: 40px
+    &__contant
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(1, 156px)
+        gap: 15px
+    &__item
+        border-radius: 10px
+        width: 100%
+        height: 100%
+        background: rgba(54, 87, 203, 0.3)
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+.moviePosters
+    margin-bottom: 50px
+    &__contant-wrapper
+        overflow-x: auto
+        padding-bottom: 20px
+        &::-webkit-scrollbar
+            background: #331b1e00
+            height: 7px
+        &::-webkit-scrollbar-thumb
+            background: $secondColor
+            border-radius: 10px
+            height: 7px
+        &::-mozilla-scrollbar
+            background: #332d1b00
+            height: 7px
+        &::-mozilla-scrollbar-thumb
+            background: $secondColor
+            border-radius: 10px
+            height: 7px
+    &__contant
+        width: fit-content
+        display: flex
+        align-items: center
+    &__item
+        margin-right: 23px
+        border-radius: 10px
+        width: 340px
+        height: 462px
+        background: rgba(54, 87, 203, 0.3)
+        display: flex
+        align-items: center
+        &:last-child
+            margin-right: 0
+.movieFrames
+    margin-bottom: 50px
+    &__contant
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__item
+        margin-bottom: 25px
+        border-radius: 10px
+        width: 340px
+        height: 462px
+        &_bigImg
+            width: 702px
+.movieQuotes
+    margin-bottom: 50px
+    &__text
+        margin-top: 40px
+        color: $mainColor
+        width: 100%
+        border-radius: 10px
+        height: fit-content
+        padding: 56px 56px 46px 56px
+        background: $darkColor
+        position: relative
+        img
+            position: absolute
+            top: -15px
+    &__paragraph
+        font-style: italic
+        font-weight: 400
+        font-size: 17px
+        color: $mainColor
+    &__author
+        font-weight: 600
+        font-size: 18px
+.ADDmovieReview
+    border-radius: 10px
+    width: 214px
+    height: 63px
+    box-shadow: 0 0 15px 0 rgba(72, 113, 255, 0.8)
+    background: $secondColor
+    color: $mainColor
+    font-weight: bold
+    font-size: 16px
+.subscribeToUs
+    margin-top: 50px
+    padding-top: 70px
+    background: #151a26
+.movieReview
+    .ReviewFilterTabs
+        width: 100% 
+        &__tabsList
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            gap: 20px
+        &__item
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 10px
+            width: 100%
+            height: 63px
+            transition: 0.5s all
+            cursor: pointer
+            font-weight: 600
+            font-size: 20px
+            color: #ffffff73
+            &[data-rf="all"]
+                background: rgba(54, 87, 203, 0.3)
+                &.ReviewFilterTabs__item_active
+                    background: rgba(54, 87, 203, 1)
+                    box-shadow: 0 0 15px 0 rgba(54, 87, 203, 0.3)
+                    color: $mainColor
+            &[data-rf="goodReviews"]
+                background: rgba(87, 208, 67, 0.38)
+                &.ReviewFilterTabs__item_active
+                    background: #57d043
+                    box-shadow: 0 0 15px 0 rgba(87, 208, 67, 0.38)
+                    color: $mainColor
+            &[data-rf="neutralReviews"]
+                background: rgba(255, 240, 101, 0.3)
+                &.ReviewFilterTabs__item_active
+                    background: #fff065d5
+                    box-shadow: 0 0 15px 0 rgba(255, 240, 101, 0.3)
+                    color: $mainColor
+            &[data-rf="badReviews"]
+                background: #ce232386
+                &.ReviewFilterTabs__item_active
+                    background: #ce2323
+                    box-shadow: 0 0 15px 0 #ce232386
+                    color: $mainColor      
+.ReviewContent
+    color: $mainColor
+    .ReviewElement
+        background: $darkColor
+        border-radius: 10px
+        margin: 48px 0
+        padding: 45px 40px
+        display: flex
+        flex-direction: column
+    .badReviews
+        border: 5px solid #ce2323
+    .goodReviews
+        border: 5px solid #57d043
+    .neutralReviews
+        border: 5px solid #fff065d5
+    .ReviewElement
+        a
+            color: $mainColor
+            text-decoration: none
+            font-weight: 500
+            font-size: 18px
+        .comment
+            display: block
+            font-weight: 400
+            font-size: 20px
+            span
+                margin-left: 5px
+                border-bottom: 1px solid $mainColor
+        .paragraph
+            font-weight: 400
+            font-size: 20px
+            text-align: justify
+        &__header
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 100%
+            height: 196px
+            margin-bottom: 20px
+            .UserData
+                display: flex
+                align-items: center
+                font-weight: 700
+                font-size: 30px
+                img
+                    width: 90px
+                    margin-right: 20px
+            .UserLinks
+                width: 34%
+                display: flex
+                align-items: center
+                justify-content: space-between
+        &__title
+            display: flex
+            align-items: center
+            justify-content: space-between
+            .ThisReviewTitle
+                font-weight: 700
+                font-size: 33px
+        .ThisReviewmarks
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .markBorderWrapper
+                display: flex
+                .markBorder 
+                    background: #252C42

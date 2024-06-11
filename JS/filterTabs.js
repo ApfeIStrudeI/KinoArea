@@ -47,21 +47,34 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // cinemaNow section
-    new FilterMechanism({
-        cardItem: document.querySelector('.cinemaNow').querySelectorAll('.cardItem__movieGanre'),
-        tabs: document.querySelector('.cinemaNow').querySelectorAll('.subheader__item'),
-        tabsParent: document.querySelector('.cinemaNow').querySelector('.subheader__list'),
-        tabElement: 'subheader__item',
-        filterAttrib: 'filter'
-    }).filterMechanism();
+    if(!document.querySelector('.body').classList.contains('moviePageBody')) {
 
-    // Popular movie section 
-    new FilterMechanism({
-        cardItem: document.querySelector('.popular').querySelectorAll('.cardItem__movieTitle'),
-        tabs: document.querySelector('.popular').querySelectorAll('.subheader__item'),
-        tabsParent: document.querySelector('.popular').querySelector('.subheader__list'),
-        tabElement: 'subheader__item',
-        filterAttrib: 'df'
-    }).filterMechanism(); 
+            // cinemaNow section
+        new FilterMechanism({
+            cardItem: document.querySelector('.cinemaNow').querySelectorAll('.cardItem__movieGanre'),
+            tabs: document.querySelector('.cinemaNow').querySelectorAll('.subheader__item'),
+            tabsParent: document.querySelector('.cinemaNow').querySelector('.subheader__list'),
+            tabElement: 'subheader__item',
+            filterAttrib: 'filter'
+        }).filterMechanism();
+
+        // Popular movie section 
+        new FilterMechanism({
+            cardItem: document.querySelector('.popular').querySelectorAll('.cardItem__movieTitle'),
+            tabs: document.querySelector('.popular').querySelectorAll('.subheader__item'),
+            tabsParent: document.querySelector('.popular').querySelector('.subheader__list'),
+            tabElement: 'subheader__item',
+            filterAttrib: 'df'
+        }).filterMechanism(); 
+    } else if(document.querySelector('.body').classList.contains('moviePageBody')) {
+        
+        // movieReviews section 
+        new FilterMechanism({
+            cardItem: document.querySelector('.movieReview').querySelectorAll('.ReviewElement'),
+            tabs: document.querySelector('.movieReview').querySelectorAll('.ReviewFilterTabs__item'),
+            tabsParent: document.querySelector('.movieReview').querySelector('.ReviewFilterTabs__tabsList'),
+            tabElement: 'ReviewFilterTabs__item',
+            filterAttrib: 'rf'
+        }).filterMechanism(); 
+    }
 });

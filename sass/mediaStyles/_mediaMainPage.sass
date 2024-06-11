@@ -79,7 +79,7 @@
             &__movieGanre
                 font-size: 11px
     .cinemaNow
-        background: url(../images/main.jpg) top -50px center/105% no-repeat
+        background: url(../images/page-bg/main.png) top center/105% no-repeat
         .movieCards
             min-height: 300px
             .cardItem
@@ -89,6 +89,19 @@
             width: 164px
             height: 59px
             font-size: 16px
+    .markBorder
+        border-radius: 10px
+        width: 38px
+        height: 38px
+        margin-left: 5px
+        .points
+            font-size: 12px
+            position: absolute
+            top: 110%
+        &:hover .fa-solid
+                font-size: 20px
+        .fa-solid
+            font-size: 15px
     .trailer
         margin-bottom: 33px
         .subheader
@@ -158,26 +171,6 @@
                     background: $mainColor
                     box-shadow: 0 0 15px 0 rgba(72,113,255,.8)
                     border: 2px solid $secondColor
-        .trailerDescr
-            margin-bottom: 27px
-            &__title
-                @include forTitle
-                font-size: 35px
-                margin-right: 24px
-            .secondFlex
-                .markBorder
-                    border-radius: 10px
-                    width: 38px
-                    height: 38px
-                    margin-left: 5px
-                    .points
-                        font-size: 12px
-                        position: absolute
-                        top: 110%
-                    &:hover .fa-solid
-                            font-size: 20px
-                    .fa-solid
-                        font-size: 15px
         .trailer__slider
             margin-top: 15px
             height: 190px
@@ -208,6 +201,12 @@
                 &__title
                     margin-top: 10px
                     font-size: 15px
+    .trailerDescr
+        margin-bottom: 27px
+        &__title
+            @include forTitle
+            font-size: 35px
+            margin-right: 24px
     .popular
         .cardItem
             margin-right: 11px
@@ -337,25 +336,25 @@
                 align-self: flex-start
             &__title
                 margin-top: -10px
-        .subscribe
-            height: 396px
-            border-radius: 10px
-            padding: 40px 106px
+    .subscribe
+        height: 396px
+        border-radius: 10px
+        padding: 40px 106px
+        justify-content: flex-end
+        &__content
+            height: 295px
+            width: 100%
             justify-content: flex-end
-            &__content
-                height: 295px
-                width: 100%
-                justify-content: flex-end
-                .subheader
-                    margin-bottom: 20px
-            &__descr
-                font-size: 17px
-            &__interactiveEl
-                height: 62px
-                input
-                    height: 100%
-                .subscribeBtn
-                    height: 100%
+            .subheader
+                margin-bottom: 20px
+        &__descr
+            font-size: 17px
+        &__interactiveEl
+            height: 62px
+            input
+                height: 100%
+            .subscribeBtn
+                height: 100%
     .filmBoxOffice
         height: fit-content
         justify-content: flex-start
@@ -429,7 +428,6 @@
             height: 325px
             margin-bottom: 30px
     .cinemaNow
-        background: url(../images/main.jpg) top -10px center/105% no-repeat
         .movieCards
             .cardItem
                 display: inline-flex
@@ -473,11 +471,11 @@
                 .volume-none
                     i 
                         font-size: 18px
-        .trailerDescr
-            margin-bottom: 25px
-            &__title
-                @include forTitle
-                font-size: 30px
+    .trailerDescr
+        margin-bottom: 25px
+        &__title
+            @include forTitle
+            font-size: 30px
     .persons
         .personsSubcontainer
             flex-wrap: wrap
@@ -550,28 +548,28 @@
             button
                 width: 21px
                 height: 20px
-        .subscribe
-            height: 370px
-            padding: 36px 54px
-            &__content
-                height: 248px
-                width: 100%
-                .subheader
-                    margin-bottom: 0px
-                    &__title
-                        font-size: 35px
-            &__descr
+    .subscribe
+        height: 370px
+        padding: 36px 54px
+        &__content
+            height: 248px
+            width: 100%
+            .subheader
+                margin-bottom: 0px
+                &__title
+                    font-size: 35px
+        &__descr
+            font-size: 16px
+            margin-bottom: 20px
+        &__interactiveEl
+            width: 100%
+            height: 62px
+            input
+                width: 378px
                 font-size: 16px
-                margin-bottom: 20px
-            &__interactiveEl
-                width: 100%
-                height: 62px
-                input
-                    width: 378px
-                    font-size: 16px
-                .subscribeBtn
-                    font-size: 16px
-                    width: 164px
+            .subscribeBtn
+                font-size: 16px
+                width: 164px
     .filmBoxOffice
         margin-bottom: 16px
         &__item
@@ -714,7 +712,6 @@
             height: 285px
             margin-bottom: 30px
     .cinemaNow
-        background: url(../images/main.jpg) top center/105% no-repeat
         .movieCards
             display: flex
             flex-wrap: wrap
@@ -738,6 +735,17 @@
         .buttonMore
             width: 150px
             height: 45px
+            font-size: 12px
+    .markBorder
+        border-radius: 5px
+        width: 30px
+        height: 30px
+        margin-left: 5px
+        .points
+            font-size: 9px
+        &:hover .fa-solid
+            font-size: 13px
+        .fa-solid
             font-size: 12px
     .trailer
         .subheader
@@ -802,31 +810,6 @@
                         font-size: 14px
                 .volume 
                     display: none
-        .trailerDescr
-            margin-bottom: 10px
-            &__title
-                @include forTitle
-                font-size: 22px
-                margin-bottom: 7px
-            .firstFlex
-                flex-direction: column
-                align-items: flex-start
-            .trailerDescr__social div 
-                margin: 0 15px 0 0
-                i
-                    font-size: 10px
-            .secondFlex
-                .markBorder
-                    border-radius: 5px
-                    width: 30px
-                    height: 30px
-                    margin-left: 5px
-                    .points
-                        font-size: 9px
-                    &:hover .fa-solid
-                        font-size: 13px
-                    .fa-solid
-                        font-size: 12px
         .trailer__slider
             margin-top: 5px
             height: 160px
@@ -857,6 +840,19 @@
                 &__title
                     margin-top: 4px
                     font-size: 12px
+    .trailerDescr
+        margin-bottom: 10px
+        &__title
+            @include forTitle
+            font-size: 22px
+            margin-bottom: 7px
+        .firstFlex
+            flex-direction: column
+            align-items: flex-start
+        .trailerDescr__social div 
+            margin: 0 15px 0 0
+            i
+                font-size: 10px
     .popular
         .subheader
             height: 60px
@@ -1013,44 +1009,44 @@
                 height: 16px
                 img
                     width: 100%
-        .subscribe
-            height: 460px
-            padding: 23px
-            &__content
-                height: 100%
-                .subheader
-                    width: 100%
-                    &__title
-                        font-size: 20px
-            &__descr
-                font-size: 15px
-            &__interactiveEl
-                flex-direction: column
+    .subscribe
+        height: 460px
+        padding: 23px
+        &__content
+            height: 100%
+            .subheader
                 width: 100%
-                height: 130px
-                input
-                    width: 100%
-                    height: 60px
-                .subscribeBtn
-                    width: 100%
-                    height: 60px
-            .check
-                max-width: 80%
-                label
-                    max-width: 100%
-                    flex-wrap: wrap
-                .customCheck
-                    font-size: 14px
-                    justify-content: flex-start
-                    span
-                        margin-top: -12px
-                        margin-left: 15px
-                    a
-                        margin-top: -10px
-                        margin-left: 30px
-                    .checkbox
-                        width: 15px
-                        height: 15px
+                &__title
+                    font-size: 20px
+        &__descr
+            font-size: 15px
+        &__interactiveEl
+            flex-direction: column
+            width: 100%
+            height: 130px
+            input
+                width: 100%
+                height: 60px
+            .subscribeBtn
+                width: 100%
+                height: 60px
+        .check
+            max-width: 80%
+            label
+                max-width: 100%
+                flex-wrap: wrap
+            .customCheck
+                font-size: 14px
+                justify-content: flex-start
+                span
+                    margin-top: -12px
+                    margin-left: 15px
+                a
+                    margin-top: -10px
+                    margin-left: 30px
+                .checkbox
+                    width: 15px
+                    height: 15px
     .filmBoxOffice
         &__item
             max-width: 178px
@@ -1093,12 +1089,11 @@
     .expected__slider-window
         width: 92%
         margin: 0 auto
-    .expected
-        .subscribe__content
-            .subheader
-                width: fit-content !important
-                &__title
-                    display: block !important
+    .subscribe__content
+        .subheader
+            width: fit-content !important
+            &__title
+                display: block !important
 @media (max-width: 415px)
     .movieCards
         .cardItem
@@ -1183,13 +1178,13 @@
     .expected
         &__slider-window
             width: 86%
-        .subscribe__content
-            height: 85%
-            .subheader__title
-                font-size: 20px !important
-                align-self: center
         .sliderClicker
             margin: 5px 0 0 -140px
+    .subscribe__content
+        height: 85%
+        .subheader__title
+            font-size: 20px !important
+            align-self: center
     .popular
         &__slider-window
             width: 86%
@@ -1242,11 +1237,10 @@
     .popular
         &__slider-window
             width: 88%
-    .expected
-        .subscribe__content
-            .subheader
-                &__title
-                    font-size: 16px !important
+    .subscribe__content
+        .subheader
+            &__title
+                font-size: 16px !important
 @media (max-width: 370px)
     .expected
         &__slider-window

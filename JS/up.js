@@ -11,8 +11,10 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
     $("a[href^='#']").click(function(){
-        const _href = $(this).attr("href");
-        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-        return false;
-    });
+        if (!$(this).hasClass("FastLink")) {
+            const _href = $(this).attr("href");
+            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+            return false;
+        }
+    }); 
 });

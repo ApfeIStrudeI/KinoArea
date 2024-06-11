@@ -1,0 +1,119 @@
+@media (max-width: 1690px) 
+    .watchTrailer
+        &__button
+            width: 215px
+            height: 60px
+            font-weight: 600
+            font-size: 16px
+            margin-right: 30px
+            &:hover
+                background: $mainColor
+                color: $secondColor
+                box-shadow: 0 0 10px rgba(255,255,255,.7)
+            span
+                display: block
+                position: relative
+            i
+                position: absolute
+                top: 4px
+                left: 20px
+                font-size: 20px
+        &__social
+            i
+                font-size: 18px
+                &:hover
+                    font-size: 20px
+    .paragraph
+        font-size: 16px
+        margin-bottom: 20px
+    .markElipsoids
+        font-size: 14px
+        .mark
+            margin: 14px 18px 18px 0
+        img
+            width: 45px
+    .movieDescription
+        &__firstFlexBox
+            h2
+                margin-top: 25px
+            .first-con
+                img
+                    max-width: 292px
+            .second-con
+                width: 518px
+            .third-con
+                height: 90px
+                .markBorder
+                    &:nth-child(3)
+                        width: 160px
+                        margin: 0 
+                    .procent
+                        font-size: 13px
+                span
+                    font-size: 13px
+        &__secondFlexBox
+            grid-template-columns: 140px 1fr 140px 1fr
+            font-size: 16px
+            gap: 20px 0 
+        &__thirdFlexBox
+            grid-template-columns: repeat(4, 1fr)
+            gap: 30px      
+            .director
+                grid-column: span 2
+    .actors
+        margin-bottom: 40px
+        .actorsWindow
+            padding-bottom: 20px
+            overflow-y: auto
+        .actors-area
+            grid-auto-flow: column
+            gap: 28px
+            .actor-item
+                width: 250px
+    .achievement
+        margin: 35px 0
+        &__contant
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 150px)
+            gap: 15px
+    .moviePosters
+        margin-bottom: 30px
+        &__item
+            margin-right: 16px
+            width: 270px
+            height: 390px
+            background: none
+            display: flex
+            align-items: center
+            img
+                width: 100%
+    .movieFrames
+        margin-bottom: 30px
+        &__contant-wrapper
+            padding-bottom: 20px
+            overflow-y: auto
+        &__contant
+            flex-wrap: nowrap
+            justify-content: flex-start
+        .subheader
+            margin-bottom: 0px
+            height: 70px
+        &__item
+            display: flex 
+            justify-content: center
+            margin: 0 6px
+            max-height: 290px
+            width: fit-content
+            img
+                height: 100%
+            &_bigImg
+                max-height: 290px
+                max-width: 440px
+                margin: 0 6px
+                img
+                    height: 100%
+    .movieQuotes
+        .subheader
+            margin-bottom: 0px
+            height: 50px

@@ -33,17 +33,21 @@ $darkColor: #191e2eb4
     &::-webkit-scrollbar
         background: #1b2133
         width: 7px
+        height: 7px
     &::-webkit-scrollbar-thumb
         background: $secondColor
         border-radius: 10px
         width: 7px
+        height: 7px
     &::-mozilla-scrollbar
         background: #1b2133
         width: 7px
+        height: 7px
     &::-mozilla-scrollbar-thumb
         background: $secondColor
         border-radius: 10px
         width: 7px
+        height: 7px
 .body
     background: #1e2538
     overflow-x: hidden 
@@ -52,16 +56,18 @@ $darkColor: #191e2eb4
 button
     cursor: pointer
 
-// main page 
+// main page styles
 @import "pagesStyles/mainPage.sass"
-// escapeFromPretoria page 
-@import "pagesStyles/escapeFromPretoria.sass"
+// movie pages styles
+@import "pagesStyles/moviePages.sass"
 
-// modal windows
+// modal windows styles
 @import "modalWindow.scss"
 
 // media for main page 
 @import "mediaStyles/mediaMainPage.sass"
+// media for movie pages
+@import "mediaStyles/mediaMoviePages.sass"
 
 // media for modal windows
 @import "mediaStyles/mediaWindow.sass"

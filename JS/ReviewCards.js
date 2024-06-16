@@ -44,9 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                     <div class="ThisReviewText">
-                        <p class="paragraph">
-                            ${this.reviewtext}
-                        </p>
+                        ${this.reviewtext}
                     </div>
                     <div class="ThisReviewmarks">
                         <a href="#up" data-modal class="FastLink comment">

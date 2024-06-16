@@ -1,4 +1,4 @@
-.modal {
+@mixin forModBG {
     position: absolute;
     top: 0;
     left: 0;
@@ -9,6 +9,10 @@
     overflow: hidden;
     background-color: rgba(7, 10, 17, 0.85);
     transition: 0.5s all;
+}
+
+.modal {
+    @include forModBG;
     .check {
         width: 100%;
         margin: 5px 0;
@@ -97,6 +101,103 @@
         &_dark {
             font-weight: 400;
             background: #1e2538;
+            color: $mainColor;
+        }
+    }
+}
+.search {
+    @include forModBG;
+    &__container {
+        max-width: 830px;
+        margin: 100px auto;
+    }
+    // &__content {
+
+    // }
+    &__close {
+        position: absolute;
+        top: 117px;
+        right: 24%;
+        font-size: 30px;
+        background-color: transparent;
+        cursor: pointer;
+        width: 20px;
+        img {
+            width: 100%;
+        }
+    }
+    &__window {
+        border-radius: 10px;
+        width: 815px;
+        height: 71px;
+        background: $mainColor;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+    &__input {
+        padding: 0 20px;
+        font-size: 20px;
+        outline: none;
+        border-radius: 10px;
+        width: 90%;
+        height: 71px;
+    }
+    &__yellowIcon {
+        width: 55px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: $thirdColor;
+    }
+    &__varList {
+        width: 100%;
+        height: 650px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    
+        &::-webkit-scrollbar {
+            background: #1b213300;
+        }
+        &::-moz-scrollbar {
+            background: #1b213300;
+        }
+    }
+    &__movieDescr {
+        width: 76%;
+    }
+    &__item {
+        margin-bottom: 10px;
+        background: #1e2538;
+        border-radius: 10px;
+        width: 99%;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        min-height: 140px;
+        img {
+            height: 85%;
+            margin-right: 20px;
+        }
+        .position__nameRus {
+            font-size: 20px;
+        }
+        .position__position {
+            font-size: 14px;
+        }
+        .mark {
+            border-radius: 5px;
+            width: 63px;
+            height: 33px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff83;
             color: $mainColor;
         }
     }

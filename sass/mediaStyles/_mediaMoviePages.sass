@@ -114,6 +114,59 @@
                 img
                     height: 100%
     .movieQuotes
+        &__paragraph
+            line-height: 140%
+            font-size: 16px
         .subheader
             margin-bottom: 0px
             height: 50px
+    .movieReview
+        .subheader
+            flex-direction: row
+            .FastLink
+                width: 100%
+    .ADDmovieReview
+        width: 100%
+        font-size: 15px
+    .ReviewContent
+        .ReviewElement
+            .paragraph
+                font-size: 18px
+            &__header
+                .UserLinks
+                    width: 50%
+@media (max-width: 999px) 
+    .movieDescription
+        &__firstFlexBox
+            flex-direction: column
+            max-height: 528px
+            h2
+                margin-top: 0
+            .first-con
+                order: 1
+                width: 320px
+            .second-con
+                order: 3
+                width: 60%
+            .third-con
+                order: 2
+                height: 90px
+                width: 292px
+                flex-wrap: wrap
+                .markBorder
+                    &:nth-child(4)
+                        margin: 0px
+        &__secondFlexBox
+            margin-top: 20px
+            font-size: 13px
+            gap: 15px
+    .watchTrailer
+        &__button
+            margin-right: 20px
+            width: 200px
+            i
+                top: 7px
+                left: 14px
+                font-size: 14px
+        &__social
+            width: 50%

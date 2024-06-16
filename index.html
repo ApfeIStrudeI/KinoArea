@@ -62,10 +62,10 @@
         <div class="container">
             <header class="header">
                 <div class="searchElements MIDDLESCREEN">
-                    <button class="searchButton MIDDLESCREEN">
+                    <button data-searchactive class="searchButton MIDDLESCREEN">
                         <div>
                             <img src="icons/searchVector.svg" alt="search">
-                            <div class="search">Поиск</div>
+                            <div class="searchBTN">Поиск</div>
                         </div>
                     </button>
                 </div>
@@ -95,7 +95,7 @@
                     </nav>
                 </div>
                 <div class="interactivElements NONEMOB">
-                    <button class="searchButton DESKTOP">
+                    <button data-searchactive class="searchButton DESKTOP">
                         <div><img src="icons/searchVector.svg" alt="search"></div>
                     </button>
                     <button data-modal class="autorisation">
@@ -111,7 +111,7 @@
                                 <span></span>
                             </div>
                         </button>
-                        <button class="searchButton">
+                        <button data-searchactive class="searchButton">
                             <div><img src="icons/searchVector.svg" alt="search"></div>
                         </button>
                     </div>
@@ -721,6 +721,146 @@
             </div>
         </div>
     </footer>
+
+    <div class="search hide">
+        <div class="search__container">
+            <div data-sc class="search__close">
+                <img src="icons/VectorClose.svg" alt="&times;">
+            </div>
+            <div class="search__content">
+                <div class="search__window">
+                    <input type="text" class="search__input">
+                    <div class="search__yellowIcon">
+                        <img src="icons/darckSearchVector.svg" alt="search">
+                    </div>
+                </div>
+                <div class="search__varList">
+
+                    <div class="search__item">
+                        <img src="images/testImgForSearchFunction.png">
+                        <div class="search__movieDescr">
+                            <div class="position__nameRus">
+                                Побег
+                            </div>
+                            <div class="position__nameEng">
+                                Prison Break
+                            </div>
+                            <div class="position__position">
+                                Боевик, триллер, драма, криминал, детектив, ...
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <div>
+                                8.40
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search__item">
+                        <img src="images/testImgForSearchFunction.png">
+                        <div class="search__movieDescr">
+                            <div class="position__nameRus">
+                                Забег
+                            </div>
+                            <div class="position__nameEng">
+                                Prison Break
+                            </div>
+                            <div class="position__position">
+                                Боевик, триллер, драма, криминал, детектив, ...
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <div>
+                                8.40
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search__item">
+                        <img src="images/testImgForSearchFunction.png">
+                        <div class="search__movieDescr">
+                            <div class="position__nameRus">
+                                Пробег
+                            </div>
+                            <div class="position__nameEng">
+                                Prison Break
+                            </div>
+                            <div class="position__position">
+                                Боевик, триллер, драма, криминал, детектив, ...
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <div>
+                                8.40
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search__item">
+                        <img src="images/testImgForSearchFunction.png">
+                        <div class="search__movieDescr">
+                            <div class="position__nameRus">
+                                Пробег
+                            </div>
+                            <div class="position__nameEng">
+                                Prison Break
+                            </div>
+                            <div class="position__position">
+                                Боевик, триллер, драма, криминал, детектив, ...
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <div>
+                                8.40
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="search__item">
+                        <img src="images/testImgForSearchFunction.png">
+                        <div class="search__movieDescr">
+                            <div class="position__nameRus">
+                                Побег
+                            </div>
+                            <div class="position__nameEng">
+                                Prison Break
+                            </div>
+                            <div class="position__position">
+                                Боевик, триллер, драма, криминал, детектив, ...
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <div>
+                                8.40
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="search__item">
+                        <img src="images/testImgForSearchFunction.png">
+                        <div class="search__movieDescr">
+                            <div class="position__nameRus">
+                                Побег
+                            </div>
+                            <div class="position__nameEng">
+                                Prison Break
+                            </div>
+                            <div class="position__position">
+                                Боевик, триллер, драма, криминал, детектив, ...
+                            </div>
+                        </div>
+                        <div class="mark">
+                            <div>
+                                8.40
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="modal hide">
         <div class="modal__dialog">
             <div class="modal__content">
@@ -799,7 +939,8 @@
     <a href="#up" class="pageup"><img src="icons/up.svg" alt="up"></a>
     <script src="https://kit.fontawesome.com/66e8b232e1.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="module" src="JS/modalwindows.js"></script>
+    <script type="module" src="JS/modalWindowsAndSearch.js"></script>
+    <script type="module" src="JS/search.js"></script>
     <script type="module" src="JS/mobileMenu.js"></script>
     <script type="module" src="JS/movieCards.js"></script>
     <script type="module" src="JS/filmBoxOffice.js"></script>

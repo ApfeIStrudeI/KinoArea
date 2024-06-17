@@ -112,7 +112,7 @@ window.addEventListener('DOMContentLoaded', () => {
     new MovieCard(
         'images/filmPosters/star-wars.png',
         '#',
-        '5.7',
+        '6.7',
         'Звёздные войны: Скайуокер. Восход',
         'Фантастика, фэнтези, боевик, приключения',
         '.cinemaNow .movieCards'
@@ -400,7 +400,7 @@ window.addEventListener('DOMContentLoaded', () => {
         '#',
         '6.04',
         'Ужастики 2',
-        'Фэнтези, комедия, приключения, семейный',
+        'Фэнтези, комедия, приключения',
         '.popular .movieCards',
         '2018'
     ).render();
@@ -460,7 +460,7 @@ window.addEventListener('DOMContentLoaded', () => {
         '#',
         '6.8',
         'Гренландия',
-        'боевик, драма',
+        'Боевик, драма',
         '.popular .movieCards',
         '2020'
     ).render();
@@ -470,7 +470,7 @@ window.addEventListener('DOMContentLoaded', () => {
         '#',
         '8.2',
         'Легенда о волках',
-        'боевик, драма, приключения, семейный',
+        'Приключения, семейный',
         '.popular .movieCards',
         '2020'
     ).render();
@@ -480,7 +480,7 @@ window.addEventListener('DOMContentLoaded', () => {
         '#',
         '7.6',
         'Ещё по одной',
-        'драма, комедия',
+        'Драма, комедия',
         '.popular .movieCards',
         '2020'
     ).render();
@@ -490,7 +490,7 @@ window.addEventListener('DOMContentLoaded', () => {
         '#',
         '7.22',
         'Алита: боевой ангел',
-        'боевик, фантастика',
+        'Боевик, фантастика',
         '.popular .movieCards',
         '2019'
     ).render();

@@ -111,9 +111,6 @@
         max-width: 830px;
         margin: 100px auto;
     }
-    // &__content {
-
-    // }
     &__close {
         position: absolute;
         top: 117px;
@@ -128,7 +125,7 @@
     }
     &__window {
         border-radius: 10px;
-        width: 815px;
+        width: 100%;
         height: 71px;
         background: $mainColor;
         display: flex;
@@ -143,7 +140,7 @@
         outline: none;
         border-radius: 10px;
         width: 90%;
-        height: 71px;
+        height: 100%;
     }
     &__yellowIcon {
         width: 55px;
@@ -172,6 +169,7 @@
         width: 76%;
     }
     &__item {
+        text-decoration: none;
         margin-bottom: 10px;
         background: #1e2538;
         border-radius: 10px;
@@ -180,6 +178,7 @@
         align-items: center;
         padding: 0 10px;
         min-height: 140px;
+        max-height: 150px;
         img {
             height: 85%;
             margin-right: 20px;
@@ -197,7 +196,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #ffffff83;
             color: $mainColor;
         }
     }

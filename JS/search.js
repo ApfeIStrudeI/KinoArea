@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 });
             } else {
                 searchItems.forEach(function(element){
-                    element.parentElement.parentElement.classList.remove('hide');
+                    element.parentElement.parentElement.classList.add('hide');
                 });
             }
         });

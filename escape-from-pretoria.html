@@ -76,7 +76,7 @@
         <div class="container">
             <header class="header">
                 <div class="searchElements MIDDLESCREEN">
-                    <button class="searchButton MIDDLESCREEN">
+                    <button data-searchactive class="searchButton MIDDLESCREEN">
                         <div>
                             <img src="icons/searchVector.svg" alt="search">
                             <div class="searchBTN">Поиск</div>
@@ -115,7 +115,7 @@
                     </nav>
                 </div>
                 <div class="interactivElements NONEMOB">
-                    <button class="searchButton DESKTOP">
+                    <button data-searchactive class="searchButton DESKTOP">
                         <div><img src="icons/searchVector.svg" alt="search"></div>
                     </button>
                     <button data-modal class="autorisation">
@@ -131,7 +131,7 @@
                                 <span></span>
                             </div>
                         </button>
-                        <button class="searchButton">
+                        <button data-searchactive class="searchButton">
                             <div><img src="icons/searchVector.svg" alt="search"></div> 
                         </button>
                     </div>
@@ -147,7 +147,7 @@
             </header>
             <div class="movieDescription__container">
                 <div class="movieDescription__firstFlexBox">
-                    <div class="first-con">
+                    <div class="first-con NONEMOB">
                         <img src="images/moviePagesPosters/escape-from-pretoria.png">
                     </div>
                     <div class="second-con">
@@ -203,7 +203,7 @@
                         <div class="markBorder">
                             <i class="fa-solid fa-heart"></i>
                         </div>
-                        <span>В избранном у 37933 человек </span>
+                        <span class="NONEMOB">В избранном у 37933 человек </span>
                     </div>
                 </div>
                 <div class="movieDescription__secondFlexBox">
@@ -817,6 +817,24 @@
             </div>
         </div>
     </footer>
+    <div class="search hide">
+        <div class="search__container">
+            <div data-sc class="search__close">
+                <img src="icons/VectorClose.svg" alt="&times;">
+            </div>
+            <div class="search__content">
+                <div class="search__window">
+                    <input placeholder="Название фильма" type="text" class="search__input">
+                    <div class="search__yellowIcon">
+                        <img src="icons/darckSearchVector.svg" alt="search">
+                    </div>
+                </div>
+                <div class="search__varList">
+                    <!-- данные из js -->
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="modal hide">
         <div class="modal__dialog">
             <div class="modal__content">
@@ -895,11 +913,13 @@
     <a href="#up" class="pageup"><img src="icons/up.svg" alt="up"></a>
     <script src="https://kit.fontawesome.com/66e8b232e1.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="module" src="JS/modalWindowsAndSearch.js"></script>
+    <script type="module" src="JS/searchItemsConstructor.js"></script>
+    <script type="module" src="JS/search.js"></script>
     <script type="module" src="JS/mobileMenu.js"></script>
     <script type="module" src="JS/ReviewCards.js"></script>
     <script type="module" src="JS/filterTabs.js"></script>
     <script type="module" src="JS/trailers.js"></script>
-    <script type="module" src="JS/modalWindowsAndSearch.js"></script>
     <script type="module" src="JS/up.js"></script>
 </body>
 </html>

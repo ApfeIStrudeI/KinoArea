@@ -136,7 +136,25 @@
                 .UserLinks
                     width: 50%
 @media (max-width: 999px) 
+    .position
+        &__nameRus
+            font-size: 16px
+        &__position
+            font-size: 15px
     .movieDescription
+        &__thirdFlexBox
+            padding: 15px 25px
+            grid-template-columns: repeat(3, 1fr)
+            gap: 30px      
+            .movieInfo
+                &__title
+                    font-size: 16px
+                    line-height: 28px
+                &__descr
+                    font-size: 14px 
+                    line-height: 23px
+            .director
+                grid-column: span 3
         &__firstFlexBox
             flex-direction: column
             max-height: 528px
@@ -144,29 +162,284 @@
                 margin-top: 0
             .first-con
                 order: 1
-                width: 320px
+                margin-right: 20px
+                width: 280px
+                img 
+                    width: 100%
             .second-con
                 order: 3
-                width: 60%
+                width: 353px
+                height: 461px
+                .watchTrailer
+                    flex-direction: column
+                    align-items: flex-start
+                    height: 100px
+                    &__button
+                        width: 200px
+                        margin-right: 20px
+                        height: 60px
+                        i
+                            top: 7px
+                            left: 14px
+                            font-size: 14px
+                    &__social
+                        margin-left: 15px
+                        width: 50%
+                        i
+                            font-size: 15px
             .third-con
+                margin-top: 5px
                 order: 2
-                height: 90px
+                height: 130px
                 width: 292px
                 flex-wrap: wrap
                 .markBorder
+                    width: 50px
+                    height: 50px
                     &:nth-child(4)
                         margin: 0px
         &__secondFlexBox
+            grid-template-columns: 110px 1fr 110px 1fr
             margin-top: 20px
             font-size: 13px
             gap: 15px
-    .watchTrailer
-        &__button
-            margin-right: 20px
-            width: 200px
-            i
-                top: 7px
-                left: 14px
+    .movieReview 
+        .subheader
+            margin-bottom: 0
+        .trailer__more
+            min-width: 185px 
+            height: 50px
+            .FastLink
+                height: 100%
+            .ADDmovieReview
+                height: 100%
+        .ReviewFilterTabs__tabsList
+            height: 50px
+            li
+                font-size: 15px
+                height: 100%
+    .ReviewContent
+        .ReviewElement
+            padding: 25px 20px
+            &__header
+                .UserData
+                    font-size: 22px
+                    img
+                        width: 80px
+                .UserLinks
+                    width: 80%
+            &__title
+                .ThisReviewTitle
+                    font-size: 25px
+            .ThisReviewmarks
+                .comment
+                    font-size: 15px
+@media (max-width: 767px) 
+    .position
+        &__nameRus
+            font-size: 15px
+        &__nameEng
+            font-size: 13px
+        &__position
+            font-size: 12px
+    .movieDescription
+        &__thirdFlexBox
+            padding: 15px 25px
+            grid-template-columns: repeat(3, 1fr)
+            gap: 30px      
+            .movieInfo
+                &__title
+                    font-size: 16px
+                    line-height: 28px
+                &__descr
+                    font-size: 14px 
+                    line-height: 23px
+            .director
+                grid-column: span 3
+        &__firstFlexBox
+            flex-direction: column
+            max-height: fit-content
+            .paragraph
                 font-size: 14px
-        &__social
-            width: 50%
+                text-align: justify
+            .subheader
+                &__title
+                    text-align: center
+                &__subtitle
+                    font-size: 20px
+                    text-align: center
+            .markElipsoids
+                justify-content: center
+                .mark
+                    margin: 18px 10px 
+            .second-con
+                order: 2
+                width: 100%
+                .watchTrailer
+                    align-items: center
+                    &__social
+                        margin-top: 20px
+                    &__button
+                        margin: 0
+            .third-con
+                margin-top: 5px
+                order: 3
+                width: 100%
+                justify-content: space-between
+                height: fit-content
+                margin-bottom: 20px
+                margin-top: -20px
+                .markBorder
+                    width: 60px
+                    height: 60px
+                    border-radius: 10px
+                    margin: 0px
+                    i
+                        font-size: 15px
+        &__secondFlexBox 
+            grid-template-columns: 110px 1fr 
+        &__thirdFlexBox
+            display: flex
+            flex-direction: column
+            .movieInfo
+                flex-direction: row
+                justify-content: space-between
+                &__descr
+                    width: 50%
+            .director img  
+                max-width: 110px
+            .director>div
+                margin-left: 50px
+    .actors 
+        .actors-area
+            grid-template-columns: repeat(5, 170px)
+            gap: 10px
+            .actor-item
+                width: 170px
+        .actorsWindow
+            &::-webkit-scrollbar
+                height: 0
+            &::-moz-scrollbar
+                height: 0
+    .movieTrailer
+        .trailer__more
+            justify-content: flex-start
+            img
+                margin-left: 20px
+    .subheader
+        margin-bottom: 30px
+        height: 50px
+    .achievement
+        &__contant 
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(4, 100px)
+            img
+                height: 80%
+        &__item
+            padding: 10px
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-template-rows: repeat(1, 80px)
+            img
+                justify-self: center
+        &__item>div
+            grid-column: span 2
+    .moviePosters
+        &__contant-wrapper
+            &::-webkit-scrollbar
+                height: 0
+            &::-moz-scrollbar
+                height: 0
+        &__item
+            width: 178px
+            height: 243px
+            margin-right: 10px
+    .movieFrames
+        &__contant-wrapper
+            &::-webkit-scrollbar
+                height: 0
+            &::-moz-scrollbar
+                height: 0
+        &__item
+            width: 178px
+            height: 243px
+            margin-right: 10px
+            &_bigImg
+                width: 367px
+                height: 242px
+                margin: 0 10px 0 0
+                &:last-child
+                    margin: 0 0 0 6px
+    .movieQuotes__paragraph
+        font-size: 15px !important
+        font-weight: 200 !important
+    .movieReview
+        .subheader
+            flex-direction: column
+            align-items: center
+            height: 100px
+            margin-bottom: 25px
+            .trailer__more
+                align-self: center !important
+        .ReviewFilterTabs
+            height: 100px
+            &__tabsList
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: repeat(2, 50px)
+                gap: 10px
+    .ReviewContent
+        .badReviews
+            border: 3px solid #ce2323
+        .goodReviews
+            border: 3px solid #57d043
+        .neutralReviews
+            border: 3px solid #fff065d5
+        .ReviewElement
+            padding: 25px 20px
+            &__header
+                height: 170px
+                .UserData
+                    font-size: 20px
+                    img
+                        width: 60px
+                .UserLinks
+                    width: 100%
+                    a
+                        font-size: 13px
+            &__title
+                flex-direction: column
+                min-height: 60px
+                .ThisReviewDate
+                    order: 1
+                    font-size: 14px
+                    color: #ffffff9a
+                .ThisReviewTitle
+                    font-size: 16px
+                    order: 2
+            .ThisReviewText
+                .paragraph
+                    font-weight: 400  
+                    font-size: 14px  
+                    line-height: 17px
+                    margin-bottom: 10px
+            .ThisReviewmarks
+                .comment
+                    font-size: 15px
+    .footer__navigation
+        div
+            margin: 5px 10px !important
+@media (max-width: 375px) 
+    .movieDescription__container
+        .third-con
+            height: 140px
+            margin-top: 5px
+            flex-wrap: wrap
+            span
+                width: 60vw
+            .markBorder:nth-child(3) 
+                width: 57vw
+            .NONEMOB
+                display: block !important
+    .achievement__contant
+        gap: 10px !important

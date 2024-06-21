@@ -37,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.firstMovieQuoteAuthor = data.firstMovieQuoteAuthor;
             this.secondMovieQuote = data.secondMovieQuote;
             this.secondMovieQuoteAuthor = data.secondMovieQuoteAuthor;
+            this.mainBackgroundImageSRC = data.mainBackgroundImageSRC;
         }
         PageSpumerMechanism() {
             // painting KinoareaMark
@@ -83,6 +84,24 @@ window.addEventListener('DOMContentLoaded', () => {
             } else if (this.IMDbMark > 9.5 && this.IMDbMark <= 10) {
                 this.IMDbMarkBG = '"background-image: url(icons/moviePagesMarks/10.svg);"';
             }
+
+            // динамический рейтинг ожиданий
+            if (this.expectationsRating != undefined) {
+                this.procentBAR = this.expectationsRating;
+                let n = +this.expectationsRating;
+                if (n >= 75) {
+                    this.procentBG = '#3be21d62';
+                } else if (n < 75 && n >= 60) {
+                    this.procentBG = '#88cb3669';
+                } else if (n < 60 && n >= 45) {
+                    this.procentBG = '#cb6d3673';
+                } else if (n < 45) {
+                    this.procentBG = '#cb403670';
+                }
+            } else {
+                this.procentBAR = '0'; 
+            }
+            
             document.querySelector('.body').innerHTML = `
             <nav class="mobile__menu">
                 <div class="mobile__menu-item">
@@ -142,7 +161,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </div>
             </nav>
-            <section id="up" class="movieDescription">
+            <section id="up" class="movieDescription" style="background: url(${this.mainBackgroundImageSRC}) top center/105% no-repeat;">
                 <div class="container">
                     <header class="header">
                         <div class="searchElements MIDDLESCREEN">
@@ -270,8 +289,9 @@ window.addEventListener('DOMContentLoaded', () => {
                                     <i class="fa-solid fa-thumbs-down fa-flip-horizontal"></i>
                                 </div>
                                 <div class="markBorder markBorder-procent">
+                                    <div class="procentBAR" style="width: ${this.procentBAR}%; background: ${this.procentBG};"></div>
                                     <div class="procent">
-                                        Рейтинг ожиданий ${this.expectationsRating}
+                                        Рейтинг ожиданий ${this.expectationsRating}%
                                     </div>
                                 </div>
                                 <div class="markBorder">
@@ -770,13 +790,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // escape-from-pretoria page
         new PageSpumer({
+            mainBackgroundImageSRC: '../images/page-bg/escape-from-pretoria-bg.png',
             movieCardItem: 'images/moviePagesPosters/escape-from-pretoria.png',
             movieTitleRus: 'Побег из Претории',
             movieTitleEng: 'Escape from Pretoria',
-            KinoareaMark: '8.7',
-            IMDbMark: '6.7',
+            KinoareaMark: '6.7',
+            IMDbMark: '8.7',
             shortMovieDescr: 'Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.',
-            expectationsRating: '85%',
+            expectationsRating: '85',
             peopNum: '37933',
             yearOfRelease: '2020',
             countryOfRelease: 'Великобритания, Австралия',

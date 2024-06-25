@@ -64,7 +64,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/filmPosters/joker.png', 
-        url: '#', 
+        url: 'joker.html', 
         titlerus: 'Джокер', 
         titleeng: 'Joker', 
         genres: 'Триллер, драма, криминал', 

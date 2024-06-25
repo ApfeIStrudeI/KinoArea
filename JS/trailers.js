@@ -347,7 +347,7 @@ window.addEventListener('DOMContentLoaded', () => {
             '252',
             '.trailer .openTrailerBase'
         ).render();
-    } else if(body.classList.contains('escape-from-pretoria')) {
+    } else if (body.classList.contains('escape-from-pretoria')) {
        
         // типа данные с сервера (для побега из претории)
 
@@ -358,6 +358,19 @@ window.addEventListener('DOMContentLoaded', () => {
             'escape',
             '942',
             '82',
+            '.movieTrailer .openTrailerBase'
+        ).render();
+    } else if (body.classList.contains('joker')) {
+       
+        // типа данные с сервера (для джокера)
+
+        new TrailerActiveTab(
+            'videoDB/joker-trailer.mp4',
+            'images/trailers/joker-previev.png',
+            'Джокер',
+            'joker',
+            '24030',
+            '846',
             '.movieTrailer .openTrailerBase'
         ).render();
     }

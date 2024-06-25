@@ -92,5 +92,68 @@ window.addEventListener('DOMContentLoaded', () => {
             EngName: 'Stephen Hunter',
             Role: 'Мужчина'
         }).ActorsSpumerMechanism();
+    } else if(document.querySelector('.body').classList.contains('joker')) {
+
+        // joker page
+        new ActorsSpumer({
+            src: 'images/actors/joker/hoakin-fenicks.png',
+            RusName: 'Хоакин Феникс',
+            EngName: 'Joaquin Phoenix',
+            Role: 'Артур Флек'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/robert-de-niro.png',
+            RusName: 'Роберт Де Ниро',
+            EngName: 'Robert De Niro',
+            Role: 'Мюррей Франклин'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/zazi-bitz.png',
+            RusName: 'Зази Битц',
+            EngName: 'Zazi Bitz',
+            Role: 'Софи Дюмон'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/rensis-konroi.png',
+            RusName: 'Фрэнсис Конрой',
+            EngName: 'Frensis Konroi',
+            Role: 'Пенни Флек (мать Артура)'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/brett-kallen.png',
+            RusName: 'Бретт Каллен',
+            EngName: 'Brett Kallen',
+            Role: 'Томас Уэйн'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/shei-uigem.png',
+            RusName: 'Шей Уигэм',
+            EngName: 'Shei Uigem',
+            Role: 'детектив Берк'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/bill-kemp.png',
+            RusName: 'Билл Кэмп',
+            EngName: 'Bill Kemp',
+            Role: 'детектив Гаррити'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/glenn-flesher.png',
+            RusName: 'Гленн Флешлер',
+            EngName: 'Glenn Flesher',
+            Role: 'Рэндалл'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/josh-peis.png',
+            RusName: 'Джош Пэйс',
+            EngName: 'Josh Peis',
+            Role: 'Хойт Вон'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/joker/li-gill.png',
+            RusName: 'Ли Гилл',
+            EngName: 'Li Gill',
+            Role: 'Гари'
+        }).ActorsSpumerMechanism();
     }
 });

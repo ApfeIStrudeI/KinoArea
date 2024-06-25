@@ -60,5 +60,35 @@ window.addEventListener('DOMContentLoaded', () => {
             year: '2020'
         }).AchievementSpumerMechanism();
         
+    } if(document.querySelector('.body').classList.contains('joker')) {
+
+        // joker page
+        new AchievementSpumer({
+            src: 'icons/achievement/awardOscar.svg',
+            achievement: 'Оскар',
+            nomination: 'Лучшая мужская роль',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/achievement/awardGoldenGlobe.svg',
+            achievement: 'Золотой глобус',
+            nomination: 'Лучшая мужская роль',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/achievement/awardGoldenGlobe.svg',
+            achievement: 'Золотой глобус',
+            nomination: 'Лучший саундтрек',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            achievement: 'Британская академия',
+            nomination: 'Лучший кастинг',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+        
     } 
 });

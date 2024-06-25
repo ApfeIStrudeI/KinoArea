@@ -102,7 +102,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/joker.png',
-        '#',
+        'joker.html',
         '8.5',
         'Джокер',
         'Триллер, драма, криминал',
@@ -237,7 +237,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/joker.png',
-        '#',
+        'joker.html',
         '8.5',
         'Джокер',
         'Триллер, драма, криминал',
@@ -497,7 +497,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/escape.png',
-        '#',
+        'escape-from-pretoria.html',
         '6.7',
         'Побег из Претории',
         'Триллер',

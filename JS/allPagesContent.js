@@ -790,12 +790,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // escape-from-pretoria page
         new PageSpumer({
-            mainBackgroundImageSRC: '../images/page-bg/escape-from-pretoria-bg.png',
+            mainBackgroundImageSRC: 'images/page-bg/escape-from-pretoria-bg.png',
             movieCardItem: 'images/moviePagesPosters/escape-from-pretoria.png',
             movieTitleRus: 'Побег из Претории',
             movieTitleEng: 'Escape from Pretoria',
             KinoareaMark: '6.7',
-            IMDbMark: '8.7',
+            IMDbMark: '7.8',
             shortMovieDescr: 'Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.',
             expectationsRating: '85',
             peopNum: '37933',
@@ -827,6 +827,49 @@ window.addEventListener('DOMContentLoaded', () => {
             firstMovieQuoteAuthor: 'Слова отца',
             secondMovieQuote: 'Мы вынуждены отталкиваться от того, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает актуальность форм воздействия. Приятно, граждане, наблюдать, как непосредственные участники технического прогресса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть функционально разнесены на независимые элементы. Господа, понимание сути ресурсосберегающих технологий создаёт предпосылки для приоритизации разума над эмоциями. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.',
             secondMovieQuoteAuthor: 'Слова странного человека'
+        }).PageSpumerMechanism();
+
+    } else if(document.querySelector('.body').classList.contains('joker')) {
+
+        // joker page
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/main.png',
+            movieCardItem: 'images/filmPosters/joker.png',
+            movieTitleRus: 'Джокер',
+            movieTitleEng: 'Joker',
+            KinoareaMark: '8.5',
+            IMDbMark: '8.0',
+            shortMovieDescr: 'Готэм, начало 1980-х годов. Комик Артур Флек живет с больной матерью, которая с детства учит его «ходить с улыбкой». Пытаясь нести в мир хорошее и дарить людям радость, Артур сталкивается с человеческой жестокостью и постепенно приходит к выводу, что этот мир получит от него не добрую улыбку, а ухмылку злодея Джокера.',
+            expectationsRating: '98',
+            peopNum: '65026',
+            yearOfRelease: '2019',
+            countryOfRelease: 'США, Канада',
+            slogan: '«Сделай счастливое лицо»',
+            director: 'Тодд Филлипс',
+            Screenwriter: 'Тодд Филлипс, Скотт Сильвер, Боб Кейн, ...',
+            Producer: 'Ричард Баратта, Брюс Берман, Джейсон Клот, ...',
+            Operator: 'Лоуренс Шер',
+            Composer: 'Хильдур Гуднадоуттир',
+            Artist: 'Марк Фридберг, Лора Боллинджер, Марк Бриджес, ...',
+            Editor: 'Джефф Грот',
+            Genre: 'Триллер, драма, криминал',
+            boxOffice: '1 078 751 311',
+            PremiereWrld: '31 августа 2019',
+            PremiereRF: '3 октября 2019',
+            AgeLimit: '18+',
+            TimeLimit: '122 мин. / 2:02',
+            directorIMG: 'images/directors/tom-philips.png',
+            directorNameRus: 'Тодд Филлипс',
+            directorNameEng: 'Todd Phillips',
+            ProductionSpanList: '<span>1.ㅤ22 & Indiana Pictures</span><span>2.ㅤBron Studios</span><span>3.ㅤCreative Wealth Media Finance</span><span>4.ㅤDC Comics</span><span>5.ㅤDC Entertainment</span><span>6.ㅤVillage Roadshow Pictures</span><span>7.ㅤWarner Bros</span>',
+            SpecialEffectsSpanList: '<span>1.ㅤScanlineVFX</span><span>2.ㅤShade VFX</span><span>3.ㅤCaptured Dimensions</span>',
+            DubbingStudioSpanList: '<span>1.ㅤМосфильм-Мастер</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/joker/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/joker/6.png"></div>',
+            firstMovieQuote: 'Я вдруг понял, что большинство людей не слушают. Они просто ждут своей очереди снова заговорить.',
+            firstMovieQuoteAuthor: 'Слова Артура Флека',
+            secondMovieQuote: 'Худшее свойство психического заболевания состоит в том, что люди ожидают, что вы будете вести себя так, будто его у вас нет.',
+            secondMovieQuoteAuthor: 'Слова Артура Флека'
         }).PageSpumerMechanism();
 
     }

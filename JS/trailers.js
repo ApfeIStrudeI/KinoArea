@@ -373,5 +373,18 @@ window.addEventListener('DOMContentLoaded', () => {
             '846',
             '.movieTrailer .openTrailerBase'
         ).render();
+    } else if (body.classList.contains('star-wars')) {
+       
+        // типа данные с сервера (для звездных войн)
+
+        new TrailerActiveTab(
+            'videoDB/star-wars-t.mp4',
+            'images/trailers/sw.png',
+            'Звёздные войны: Скайуокер. Восход',
+            'starWars',
+            '1030',
+            '2046',
+            '.movieTrailer .openTrailerBase'
+        ).render();
     }
 });

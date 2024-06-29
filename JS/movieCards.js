@@ -111,7 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/star-wars.png',
-        '#',
+        'star-wars.html',
         '6.7',
         'Звёздные войны: Скайуокер. Восход',
         'Фантастика, фэнтези, боевик, приключения',
@@ -120,7 +120,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/gents.png',
-        '#',
+        'gentlemen.html',
         '8',
         'Джентльмены',
         'Боевик, комедия, криминал',

@@ -32,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if(document.querySelector('.body').classList.contains('escape-from-pretoria')) {
 
         // escape-from-pretoria page
+
         new ActorsSpumer({
             src: 'images/actors/DanielRadcliffe.png',
             RusName: 'Дэниэл Рэдклифф',
@@ -95,6 +96,7 @@ window.addEventListener('DOMContentLoaded', () => {
     } else if(document.querySelector('.body').classList.contains('joker')) {
 
         // joker page
+
         new ActorsSpumer({
             src: 'images/actors/joker/hoakin-fenicks.png',
             RusName: 'Хоакин Феникс',
@@ -154,6 +156,70 @@ window.addEventListener('DOMContentLoaded', () => {
             RusName: 'Ли Гилл',
             EngName: 'Li Gill',
             Role: 'Гари'
+        }).ActorsSpumerMechanism();
+    } else if(document.querySelector('.body').classList.contains('star-wars')) {
+
+        // star-wars page
+        
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/adam-driver.png',
+            RusName: 'Адам Драйвер',
+            EngName: 'Adam Driver',
+            Role: 'Кайло Рен'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/daisy-ridly.png',
+            RusName: 'Дейзи Ридли',
+            EngName: 'Daisy Ridley',
+            Role: 'Рей'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/carrie-fisher.png',
+            RusName: 'Кэрри Фишер',
+            EngName: 'Carrie Fisher',
+            Role: 'Лея Органа'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/donal-gilson.png',
+            RusName: 'Донал Глисон',
+            EngName: 'Domhnall Gleeson',
+            Role: 'генерал Армитаж Хакс'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/mark-hamill.png',
+            RusName: 'Марк Хэмилл',
+            EngName: 'Mark Hamill',
+            Role: 'Люк Скайуокер'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/john-boega.png',
+            RusName: 'Джон Бойега',
+            EngName: 'John Boyega',
+            Role: 'Финн'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/entony-daniels.png',
+            RusName: 'Энтони Дэниелс',
+            EngName: 'Anthony Daniels',
+            Role: 'C-3PO'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/naomy-aki.png',
+            RusName: 'Наоми Аки',
+            EngName: 'Naomi Ackie',
+            Role: 'Джанна'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/oscar-aizek.png',
+            RusName: 'Оскар Айзек',
+            EngName: 'Oscar Isaac',
+            Role: 'По Дэмерон'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/star-wars/richard-grand.png',
+            RusName: 'Ричард Э. Грант',
+            EngName: 'Richard E. Grant',
+            Role: 'генерал Энрик Прайд'
         }).ActorsSpumerMechanism();
     }
 });

@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/filmPosters/star-wars.png', 
-        url: '#', 
+        url: 'star-wars.html', 
         titlerus: 'Звёздные войны: Скайуокер. Восход', 
         titleeng: 'Star Wars: The Rise of Skywalker', 
         genres: 'Фантастика, фэнтези, боевик, приключения', 
@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/filmPosters/gents.png', 
-        url: '#', 
+        url: 'gentlemen.html', 
         titlerus: 'Джентльмены', 
         titleeng: 'The Gentlemen', 
         genres: 'Боевик, комедия, криминал', 

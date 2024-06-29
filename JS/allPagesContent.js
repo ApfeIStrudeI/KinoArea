@@ -872,5 +872,91 @@ window.addEventListener('DOMContentLoaded', () => {
             secondMovieQuoteAuthor: 'Слова Артура Флека'
         }).PageSpumerMechanism();
 
+    } else if(document.querySelector('.body').classList.contains('star-wars')) {
+
+        // star-wars page
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/sw.png',
+            movieCardItem: 'images/filmPosters/star-wars.png',
+            movieTitleRus: 'Звёздные войны: Скайуокер. Восход',
+            movieTitleEng: 'Star Wars: Episode IX – The Rise of Skywallker',
+            KinoareaMark: '6.7',
+            IMDbMark: '6.4',
+            shortMovieDescr: 'Фильм завершает невероятную историю семьи Скайуокеров, длящуюся уже более сорока лет, и обещает дать ответы на все загадки из предыдущих серий. Зрителя ожидают старые и новые герои, уникальные миры, увлекательные путешествия на край Галактики и грандиозный финал фантастической саги.',
+            expectationsRating: '62',
+            peopNum: '8026',
+            yearOfRelease: '2019',
+            countryOfRelease: 'США',
+            slogan: '«Every Generation Has a Legend»',
+            director: 'Джей Джей Абрамс',
+            Screenwriter: 'Джей Джей Абрамс, Крис Террио, Дерек Коннолли, ...',
+            Producer: 'Джей Джей Абрамс, Пиппа Андерсен, ...',
+            Operator: 'Дэниэл Миндел',
+            Composer: 'Джон Уильямс',
+            Artist: 'Рик Картер, Кевин Дженкинс, Джимм Бар, ...',
+            Editor: 'Мариан Брэндом, Стефан Грубе',
+            Genre: 'Фантастика, боевик, приключение',
+            boxOffice: '1 074 144 248',
+            PremiereWrld: '16 декабря 2019',
+            PremiereRF: '19 декабря 2019',
+            AgeLimit: '18+',
+            TimeLimit: '141 мин. / 2:21',
+            directorIMG: 'images/directors/j-j-abrams.png',
+            directorNameRus: 'Джей Джей Абрамс',
+            directorNameEng: 'J J Abrams',
+            ProductionSpanList: '<span>1.ㅤBad Robot</span><span>2.ㅤDigital Makeup Group</span><span>3.ㅤLucasfilm Ltd</span><span>4.ㅤWalt Disney Pictures</span>',
+            SpecialEffectsSpanList: '<span>1.ㅤ32TEN Studios</span><span>2.ㅤBase FX</span><span>3.ㅤHybride Technologies</span><span>4.ㅤImportant Looking Pirates (ILPvfx)</span><span>5.ㅤIndustrial Light & Magic (ILM)</span><span>6.ㅤStereo D</span><span>7.ㅤThird Floor, The</span><span>8.ㅤExceptional Minds</span><span>8.ㅤReelEye Company</span>',
+            DubbingStudioSpanList: '<span>1.ㅤНевафильм</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/s-w-p1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/s-w-p2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/s-w-p3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/star-wars/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/star-wars/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/star-wars/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/star-wars/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/star-wars/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/star-wars/6.png"></div>',
+            firstMovieQuote: 'Эта миссия - все. Мы не можем потерпеть неудачу.',
+            firstMovieQuoteAuthor: 'Слова Леи Органы',
+            secondMovieQuote: 'Я видела себя на темном троне. Я не позволю этому случиться. Я никогда не покину это место. Я делаю то же, что и ты.',
+            secondMovieQuoteAuthor: 'Слова Рей'
+        }).PageSpumerMechanism();
+
+    } else if(document.querySelector('.body').classList.contains('gentlemen')) {
+
+        // gentlemen page
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/gent.png',
+            movieCardItem: 'images/filmPosters/gents.png',
+            movieTitleRus: 'Джентльмены',
+            movieTitleEng: 'The Gentlemen',
+            KinoareaMark: '8.0',
+            IMDbMark: '7.89',
+            shortMovieDescr: 'Один ушлый американец придумал схему нелегального обогащения с использованием поместий обедневшей английской аристократии и разбогател на этом . Другой проныра приходит к правой руке американца, и предлагает тому купить киносценарий, в котором подробно описаны преступления его босса при участии других представителей лондонского криминального мира — партнёра-еврея, китайской диаспоры, чернокожих спортсменов и даже русского олигарха.',
+            expectationsRating: '75',
+            peopNum: '65026',
+            yearOfRelease: '2019',
+            countryOfRelease: 'США, Великобритания, Франция, Япония, Чехия',
+            slogan: '«Criminal. Class»',
+            director: 'Гай Ричи',
+            Screenwriter: 'Гай Ричи, Айван Эткинсон, Марн Дэвис, ...',
+            Producer: 'Мэттью Андерсен, Айван Эткинсон, Билл Блок, ...',
+            Operator: 'Алан Стюард',
+            Composer: 'Кристофер Бенстед',
+            Artist: 'Джемма Джексон, Рэйчел Олтон, Оливер Кэрролл, ...',
+            Editor: 'Джеймс Херберт, Пол Мачлисс',
+            Genre: 'Боевик, комедия, криминал',
+            boxOffice: '115 171 795',
+            PremiereWrld: '3 декабря 2019',
+            PremiereRF: '13 февраля 2020',
+            AgeLimit: '18+',
+            TimeLimit: '113 мин. / 1:53',
+            directorIMG: 'images/directors/guy-ritchie.png',
+            directorNameRus: 'Гай Ричи',
+            directorNameEng: 'Todd Phillips',
+            ProductionSpanList: '<span>1.ㅤ22 & Indiana Pictures</span><span>2.ㅤBron Studios</span><span>3.ㅤCreative Wealth Media Finance</span><span>4.ㅤDC Comics</span><span>5.ㅤDC Entertainment</span><span>6.ㅤVillage Roadshow Pictures</span><span>7.ㅤWarner Bros</span>',
+            SpecialEffectsSpanList: '<span>1.ㅤScanlineVFX</span><span>2.ㅤShade VFX</span><span>3.ㅤCaptured Dimensions</span>',
+            DubbingStudioSpanList: '<span>1.ㅤМосфильм-Мастер</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/joker/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/joker/6.png"></div>',
+            firstMovieQuote: 'Я вдруг понял, что большинство людей не слушают. Они просто ждут своей очереди снова заговорить.',
+            firstMovieQuoteAuthor: 'Слова Артура Флека',
+            secondMovieQuote: 'Худшее свойство психического заболевания состоит в том, что люди ожидают, что вы будете вести себя так, будто его у вас нет.',
+            secondMovieQuoteAuthor: 'Слова Артура Флека'
+        }).PageSpumerMechanism();
+
     }
 });

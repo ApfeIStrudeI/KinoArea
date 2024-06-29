@@ -90,5 +90,34 @@ window.addEventListener('DOMContentLoaded', () => {
             year: '2020'
         }).AchievementSpumerMechanism();
         
+    } if(document.querySelector('.body').classList.contains('star-wars')) {
+
+        // star-wars page
+        new AchievementSpumer({
+            src: 'icons/achievement/awardGoldenGlobe.svg',
+            achievement: 'Золотой глобус',
+            nomination: 'Лучшие спецэффекты',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/achievement/awardGoldenGlobe.svg',
+            achievement: 'Золотой глобус',
+            nomination: 'Лучшая музыка',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            achievement: 'Британская академия',
+            nomination: 'Лучший звук',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            achievement: 'Британская академия',
+            nomination: 'Лучшие визуальные эффекты',
+            year: '2020'
+        }).AchievementSpumerMechanism();
+        
     } 
 });

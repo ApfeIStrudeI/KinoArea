@@ -388,7 +388,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ).render();
     } else if (body.classList.contains('gentlemen')) {
        
-        // типа данные с сервера (для джентельменов войн)
+        // типа данные с сервера (для джентельменов)
 
         new TrailerActiveTab(
             'videoDB/gents-tr.mp4',
@@ -401,7 +401,7 @@ window.addEventListener('DOMContentLoaded', () => {
         ).render();
     } else if (body.classList.contains('ford-vs-ferrari')) {
        
-        // типа данные с сервера (для форда против ферарри войн)
+        // типа данные с сервера (для форда против ферарри)
 
         new TrailerActiveTab(
             'videoDB/FORDVSFERRARI.mp4',
@@ -410,6 +410,19 @@ window.addEventListener('DOMContentLoaded', () => {
             'fordVsFerrari',
             '44030',
             '11016',
+            '.movieTrailer .openTrailerBase'
+        ).render();
+    } else if (body.classList.contains('3022')) {
+       
+        // типа данные с сервера (для 3022)
+
+        new TrailerActiveTab(
+            'videoDB/3022Trailer.mp4',
+            'images/trailers/3022.png',
+            '3022',
+            'tztt',
+            '4080',
+            '10253',
             '.movieTrailer .openTrailerBase'
         ).render();
     }

@@ -183,5 +183,32 @@ window.addEventListener('DOMContentLoaded', () => {
             year: '2020'
         }).AchievementSpumerMechanism();
         
+    } if(document.querySelector('.body').classList.contains('3022')) {
+
+        // 3022 page
+        new AchievementSpumer({
+            achievement: '--',
+            nomination: '--',
+            year: '--'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            achievement: '--',
+            nomination: '--',
+            year: '--'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            achievement: '--',
+            nomination: '--',
+            year: '--'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            achievement: '--',
+            nomination: '--',
+            year: '--'
+        }).AchievementSpumerMechanism();
+        
     } 
 });

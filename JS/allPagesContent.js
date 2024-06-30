@@ -972,7 +972,7 @@ window.addEventListener('DOMContentLoaded', () => {
             shortMovieDescr: 'В начале 1960-х Генри Форд II принимает решение улучшить имидж компании и сменить курс на производство более модных автомобилей. После неудавшейся попытки купить Ferrari американцы решают бросить вызов итальянцам на трассе и выиграть престижную гонку 24 часа Ле-Мана. Чтобы создать подходящую машину, компания нанимает автоконструктора Кэррола Шэлби, а тот отказывается работать без гонщика Кена Майлза. Вместе они принимаются за разработку спорткара Ford GT40.',
             expectationsRating: '80',
             peopNum: '45013',
-            yearOfRelease: '3215',
+            yearOfRelease: '2019',
             countryOfRelease: 'США',
             slogan: '«They took the American dream for a ride»',
             director: 'Джеймс Мэнголд',
@@ -1000,6 +1000,50 @@ window.addEventListener('DOMContentLoaded', () => {
             firstMovieQuoteAuthor: 'Кэрролл Шелби',
             secondMovieQuote: 'Иногда любые слова… они… бесполезны. А от инструментов есть польза, потому что ими можно что-то починить.',
             secondMovieQuoteAuthor: 'Кэрролл Шелби'
+        }).PageSpumerMechanism();
+
+    } else if(document.querySelector('.body').classList.contains('3022')) {
+
+        // 3022 page
+
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/3022.png',
+            movieCardItem: 'images/filmPosters/3022.png',
+            movieTitleRus: '3022',
+            movieTitleEng: '3022',
+            KinoareaMark: '4.9',
+            IMDbMark: '5.8',
+            shortMovieDescr: 'Группа астронавтов оказывается без поддержки в открытом космосе, после того как на Земле произошла глобальная катастрофа. Они считают себя последними оставшимися в живых людьми. И чтобы сохранить последние остатки человечества, им приходится вступить в жестокую борьбу за выживание в холодном космосе.',
+            expectationsRating: '54',
+            peopNum: '45013',
+            yearOfRelease: '2019',
+            countryOfRelease: 'США',
+            slogan: '«What do you do when you were the last person alive?»',
+            director: 'Джон Суитц',
+            Screenwriter: 'Райан Бинако',
+            Producer: 'Тара Л. Крэйг, Джон Суитц, Шэнан Бекер, ...',
+            Operator: 'Уилл Стоун',
+            Composer: 'Джимми ЛаВалл',
+            Artist: 'Дэвид Дин Эберт, Адриана Ламбарри, Мелисса Эрдман',
+            Editor: 'Джон Суитц',
+            Genre: 'Фантастика, триллер',
+            boxOffice: '900 320',
+            PremiereWrld: '22 ноября 2019',
+            PremiereRF: '20 января 2020',
+            AgeLimit: '18+',
+            TimeLimit: '91 мин. / 01:31',
+            directorIMG: 'images/directors/john-suits.png',
+            directorNameRus: 'Джон Суитц',
+            directorNameEng: 'John Suits',
+            ProductionSpanList: '<span>1.ㅤBondIt</span><span>2.ㅤHideout Pictures</span><span>3.ㅤNatural Selection</span><span>4.ㅤSquid Farm</span><span>5.ㅤTitle Media</span>',
+            SpecialEffectsSpanList: '<span>нет информации</span>',
+            DubbingStudioSpanList: '<span>нет информации</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/3022-1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/3022-2.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/3022/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/3022/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/3022/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/3022/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/3022/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/3022/6.png"></div>',
+            firstMovieQuote: 'В конечном итоге все сводится к тому, что в живых остался только последний человек... что ты будешь делать, когда останешься один... Джон?',
+            firstMovieQuoteAuthor: 'Ричард Вэлин',
+            secondMovieQuote: 'Ты астронавт Пангеи ... Ты не должен бояться',
+            secondMovieQuoteAuthor: 'Джон Лейн'
         }).PageSpumerMechanism();
 
     }

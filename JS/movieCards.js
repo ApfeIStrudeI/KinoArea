@@ -138,7 +138,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/3022.png',
-        '#',
+        '3022.html',
         '4.9',
         '3022',
         'Фантастика, триллер',

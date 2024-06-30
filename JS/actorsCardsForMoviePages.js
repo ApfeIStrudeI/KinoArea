@@ -11,6 +11,10 @@ window.addEventListener('DOMContentLoaded', () => {
             const element = document.createElement('div');
             element.classList.add('actor-item');
 
+            if (this.src == undefined) {
+                this.src = 'images/actors/universal-actor-icon.png'
+            }
+
             element.innerHTML = `
                 <img src=${this.src}>
                 <div>
@@ -34,61 +38,61 @@ window.addEventListener('DOMContentLoaded', () => {
         // escape-from-pretoria page
 
         new ActorsSpumer({
-            src: 'images/actors/DanielRadcliffe.png',
+            src: 'images/actors/escape-from-pretoria/DanielRadcliffe.png',
             RusName: 'Дэниэл Рэдклифф',
             EngName: 'Daniel Radcliffe',
             Role: 'Тим Дженкин'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/DanielWebber.png',
+            src: 'images/actors/escape-from-pretoria/DanielWebber.png',
             RusName: 'Даниэль Уэббер',
             EngName: 'Daniel Webber',
             Role: 'Стивен Ли'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/IanHart.png',
+            src: 'images/actors/escape-from-pretoria/IanHart.png',
             RusName: 'Иэн Харт',
             EngName: 'Ian Hart',
             Role: 'Денис Гольдберг'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/MarkLeonardWinter.png',
+            src: 'images/actors/escape-from-pretoria/MarkLeonardWinter.png',
             RusName: 'Марк Леонард Винтер',
             EngName: 'Mark Leonard Winter',
             Role: 'Леонард Фонтейн'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/NathanPage.png',
+            src: 'images/actors/escape-from-pretoria/NathanPage.png',
             RusName: 'Нэйтан Пейдж',
             EngName: 'Nathan Page',
             Role: 'Монго'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/RatidzoMambo.png',
+            src: 'images/actors/escape-from-pretoria/RatidzoMambo.png',
             RusName: 'Ратидзо Мамбо',
             EngName: 'Ratidzo Mambo',
             Role: 'Женщина'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/JeanetteCronin.png',
+            src: 'images/actors/escape-from-pretoria/JeanetteCronin.png',
             RusName: 'Жанетт Кронин',
             EngName: 'Jeanette Cronin',
             Role: 'Женщина'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/AdamTuominen.png',
+            src: 'images/actors/escape-from-pretoria/AdamTuominen.png',
             RusName: 'Адам Туоминен',
             EngName: 'Adam Tuominen',
             Role: 'Джереми Кронин'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/AdamOvadia.png',
+            src: 'images/actors/escape-from-pretoria/AdamOvadia.png',
             RusName: 'Адам Овадия',
             EngName: 'Adam Ovadia',
             Role: 'Ван Задельхофф'
         }).ActorsSpumerMechanism();
         new ActorsSpumer({
-            src: 'images/actors/StephenHunter.png',
+            src: 'images/actors/escape-from-pretoria/StephenHunter.png',
             RusName: 'Стивен Хантер',
             EngName: 'Stephen Hunter',
             Role: 'Мужчина'
@@ -348,6 +352,57 @@ window.addEventListener('DOMContentLoaded', () => {
             RusName: 'Джей Джей Филд',
             EngName: 'JJ Feild',
             Role: 'Рой Ланн'
+        }).ActorsSpumerMechanism();
+    }  else if(document.querySelector('.body').classList.contains('3022')) {
+
+        // 3022 page
+        
+        new ActorsSpumer({
+            src: 'images/actors/3022/omar-epps.png',
+            RusName: 'Омар Эппс',
+            EngName: 'Omar Epps',
+            Role: 'John Laine'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/3022/kate-walsh.png',
+            RusName: 'Кейт Уолш',
+            EngName: 'Kate Walsh',
+            Role: 'Jackie Miller'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/3022/angus-macfadyen.png',
+            RusName: 'Энгус Макфадьен',
+            EngName: 'Angus Macfadyen',
+            Role: 'Richard Valin'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            RusName: 'Джорджа Фокс',
+            EngName: 'Jorja Fox',
+            Role: 'Diane Ures'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/3022/miranda-cosgrove.png',
+            RusName: 'Миранда Косгров',
+            EngName: 'Miranda Cosgrove',
+            Role: 'Lisa Brown'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/3022/enver-gjokaj.png',
+            RusName: 'Энвер Гьокай',
+            EngName: 'Enver Gjokaj',
+            Role: 'Vincent Bernard'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/3022/haaz-sleiman.png',
+            RusName: 'Хааз Слейман',
+            EngName: 'Haaz Sleiman',
+            Role: 'Thomas Dahan'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/3022/sara-tomko.png',
+            RusName: 'Сара Томко',
+            EngName: 'Sara Tomko',
+            Role: 'Pangea'
         }).ActorsSpumerMechanism();
     }
 });

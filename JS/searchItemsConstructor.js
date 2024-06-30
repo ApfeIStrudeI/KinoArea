@@ -104,7 +104,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/filmPosters/3022.png', 
-        url: '#', 
+        url: '3022.html',  
         titlerus: '3022', 
         titleeng: '3022', 
         genres: 'Фантастика, триллер', 

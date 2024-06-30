@@ -129,7 +129,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/ford-vs-ferrari.png',
-        '#',
+        'ford-vs-ferrari.html',
         '8.1',
         'Ford против Ferrari',
         'Биография, спорт, драма, боевик',

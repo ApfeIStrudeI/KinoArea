@@ -386,5 +386,31 @@ window.addEventListener('DOMContentLoaded', () => {
             '2046',
             '.movieTrailer .openTrailerBase'
         ).render();
+    } else if (body.classList.contains('gentlemen')) {
+       
+        // типа данные с сервера (для джентельменов войн)
+
+        new TrailerActiveTab(
+            'videoDB/gents-tr.mp4',
+            'images/trailers/gents-trailer.png',
+            'Джентльмены',
+            'gentlemen',
+            '32030',
+            '10046',
+            '.movieTrailer .openTrailerBase'
+        ).render();
+    } else if (body.classList.contains('ford-vs-ferrari')) {
+       
+        // типа данные с сервера (для форда против ферарри войн)
+
+        new TrailerActiveTab(
+            'videoDB/FORDVSFERRARI.mp4',
+            'images/trailers/ford-vs-ferrari.png',
+            'Ford против Ferrari',
+            'fordVsFerrari',
+            '44030',
+            '11016',
+            '.movieTrailer .openTrailerBase'
+        ).render();
     }
 });

@@ -919,7 +919,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         // gentlemen page
         new PageSpumer({
-            mainBackgroundImageSRC: 'images/page-bg/gent.png',
+            mainBackgroundImageSRC: 'images/page-bg/gents.png',
             movieCardItem: 'images/filmPosters/gents.png',
             movieTitleRus: 'Джентльмены',
             movieTitleEng: 'The Gentlemen',
@@ -946,16 +946,60 @@ window.addEventListener('DOMContentLoaded', () => {
             TimeLimit: '113 мин. / 1:53',
             directorIMG: 'images/directors/guy-ritchie.png',
             directorNameRus: 'Гай Ричи',
-            directorNameEng: 'Todd Phillips',
-            ProductionSpanList: '<span>1.ㅤ22 & Indiana Pictures</span><span>2.ㅤBron Studios</span><span>3.ㅤCreative Wealth Media Finance</span><span>4.ㅤDC Comics</span><span>5.ㅤDC Entertainment</span><span>6.ㅤVillage Roadshow Pictures</span><span>7.ㅤWarner Bros</span>',
-            SpecialEffectsSpanList: '<span>1.ㅤScanlineVFX</span><span>2.ㅤShade VFX</span><span>3.ㅤCaptured Dimensions</span>',
-            DubbingStudioSpanList: '<span>1.ㅤМосфильм-Мастер</span>',
-            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/joker-p3.png"></div>',
-            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/joker/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/joker/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/joker/6.png"></div>',
-            firstMovieQuote: 'Я вдруг понял, что большинство людей не слушают. Они просто ждут своей очереди снова заговорить.',
-            firstMovieQuoteAuthor: 'Слова Артура Флека',
-            secondMovieQuote: 'Худшее свойство психического заболевания состоит в том, что люди ожидают, что вы будете вести себя так, будто его у вас нет.',
-            secondMovieQuoteAuthor: 'Слова Артура Флека'
+            directorNameEng: 'Guy Ritchie',
+            ProductionSpanList: '<span>1.ㅤMiramax Films</span><span>2.ㅤSTX Films</span><span>3.ㅤToff Guy Films</span>',
+            SpecialEffectsSpanList: '<span>1.ㅤUnion Visual Effects</span>',
+            DubbingStudioSpanList: '<span>1.ㅤСинеЛаб СаундМикс</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/gents1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/gents2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/gents3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/gents/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/gents/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/gents/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/gents/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/gents/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/gents/6.png"></div>',
+            firstMovieQuote: 'Большие деньги — жди проблем.',
+            firstMovieQuoteAuthor: 'Слова Микки Пирсона',
+            secondMovieQuote: 'Чтобы стать царем зверей, мало вести себя по-царски. Надо быть царем.',
+            secondMovieQuoteAuthor: 'Слова Микки Пирсона'
+        }).PageSpumerMechanism();
+
+    } else if(document.querySelector('.body').classList.contains('ford-vs-ferrari')) {
+
+        // ford-vs-ferrari page
+
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/Ford-vs-Ferrari.png',
+            movieCardItem: 'images/filmPosters/ford-vs-ferrari.png',
+            movieTitleRus: 'Ford против Ferrari',
+            movieTitleEng: 'Ford vs Ferrari',
+            KinoareaMark: '8.1',
+            IMDbMark: '8.2',
+            shortMovieDescr: 'В начале 1960-х Генри Форд II принимает решение улучшить имидж компании и сменить курс на производство более модных автомобилей. После неудавшейся попытки купить Ferrari американцы решают бросить вызов итальянцам на трассе и выиграть престижную гонку 24 часа Ле-Мана. Чтобы создать подходящую машину, компания нанимает автоконструктора Кэррола Шэлби, а тот отказывается работать без гонщика Кена Майлза. Вместе они принимаются за разработку спорткара Ford GT40.',
+            expectationsRating: '80',
+            peopNum: '45013',
+            yearOfRelease: '3215',
+            countryOfRelease: 'США',
+            slogan: '«They took the American dream for a ride»',
+            director: 'Джеймс Мэнголд',
+            Screenwriter: 'Джез Баттеруорт, Джон-Генри Баттеруорт, ...',
+            Producer: 'Джон Бернард, Дэни Бернфелд, Питер Чернин, ...',
+            Operator: 'Фидон Папамайкл',
+            Composer: 'Марко Белтрами, Бак Сандерс',
+            Artist: 'Франсуа Одуи, Густаф Аспегрен, Джордан Феррер, ...',
+            Editor: 'Эндрю Баклэнд, Майкл МакКаскер, Дирк Уэстервелт',
+            Genre: 'Биография, спорт, драма, боевик',
+            boxOffice: '225 508 210',
+            PremiereWrld: '30 августа 2019',
+            PremiereRF: '14 ноября 2019',
+            AgeLimit: '18+',
+            TimeLimit: '152 мин. / 02:32',
+            directorIMG: 'images/directors/james-mangold.png',
+            directorNameRus: 'Джеймс Мэнголд',
+            directorNameEng: 'James Mangold',
+            ProductionSpanList: '<span>1.ㅤ20th Century Fox Film Corporation</span><span>2.ㅤChernin Entertainment</span><span>3.ㅤTSG Entertainment</span><span>4.ㅤTurnpike Films</span>',
+            SpecialEffectsSpanList: '<span>1.ㅤEDI (Effetti Digitali Italiani)</span><span>2.ㅤFactory VFX</span><span>3.ㅤHalon Entertainment</span><span>4.ㅤLidar Guys</span><span>5.ㅤMethod Studios</span>',
+            DubbingStudioSpanList: '<span>1.ㅤСиПиАй Филмз / CPI Films</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/f-vs-f1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/f-vs-f2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/f-vs-f3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/ford-vs-ferrari/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/ford-vs-ferrari/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/ford-vs-ferrari/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/ford-vs-ferrari/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/ford-vs-ferrari/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/ford-vs-ferrari/6.png"></div>',
+            firstMovieQuote: 'Счастлив тот человек, кто нашёл свое дело в этом мире, потому что он ни одного дня в жизни не будет работать, но таких очень мало. Но ещё меньше других, и я не знаю повезло им или нет. Это люди, у которых есть великая цель, они одержимы чем-то и, если они не добьются этого, то просто сойдут с ума. Я такой и я знаю ещё одного, кто мыслит точно так же.',
+            firstMovieQuoteAuthor: 'Кэрролл Шелби',
+            secondMovieQuote: 'Иногда любые слова… они… бесполезны. А от инструментов есть польза, потому что ими можно что-то починить.',
+            secondMovieQuoteAuthor: 'Кэрролл Шелби'
         }).PageSpumerMechanism();
 
     }

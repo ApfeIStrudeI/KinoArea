@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/filmPosters/ford-vs-ferrari.png', 
-        url: '#', 
+        url: 'ford-vs-ferrari.html',  
         titlerus: 'Ford против Ferrari', 
         titleeng: 'Ford vs Ferrari', 
         genres: 'Биография, спорт, драма, боевик', 

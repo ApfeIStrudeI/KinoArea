@@ -221,5 +221,133 @@ window.addEventListener('DOMContentLoaded', () => {
             EngName: 'Richard E. Grant',
             Role: 'генерал Энрик Прайд'
         }).ActorsSpumerMechanism();
+    } else if(document.querySelector('.body').classList.contains('gentlemen')) {
+
+        // gentlemen page
+        
+        new ActorsSpumer({
+            src: 'images/actors/gents/matthew-mcconaughey.png',
+            RusName: 'Мэттью Макконахи',
+            EngName: 'Mattew McConaughey',
+            Role: 'Michael Pearson'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/charly-hannem.png',
+            RusName: 'Чарли Ханнэм',
+            EngName: 'Charlie Hunnam',
+            Role: 'Raymond Smith'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/henry-golding.png',
+            RusName: 'Генри Голдинг',
+            EngName: 'Henry Golding',
+            Role: 'Dry Eye'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/hugh-grand.png',
+            RusName: 'Хью Грант',
+            EngName: 'Hugh Grant',
+            Role: 'Fletcher'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/mishel-dockery.png',
+            RusName: 'Мишель Докери',
+            EngName: 'Michelle Dockery',
+            Role: 'Rosalind Pearson'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/jeremy-strong.png',
+            RusName: 'Джереми Стронг',
+            EngName: 'Jeremy Strong',
+            Role: 'Matthew'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/eddy-marsan.png',
+            RusName: 'Эдди Марсан',
+            EngName: 'Eddie Marsan',
+            Role: 'Big Dave'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/jeison-vong.png',
+            RusName: 'Джейсон Вонг',
+            EngName: 'Jason Wong',
+            Role: 'Phuc'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/kolin-farrell.png',
+            RusName: 'Колин Фаррелл',
+            EngName: 'Colin Farrell',
+            Role: 'Coach'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/gents/lain-reny.png',
+            RusName: 'Лайн Рени',
+            EngName: 'Lyne Renée',
+            Role: 'Jackie'
+        }).ActorsSpumerMechanism();
+    } else if(document.querySelector('.body').classList.contains('ford-vs-ferrari')) {
+
+        // ford-vs-ferrari page
+        
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/caitríona-balfe.png',
+            RusName: 'Катрина Балф',
+            EngName: 'Caitríona Balfe',
+            Role: 'Молли Майлз'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/christian-bale.png',
+            RusName: 'Кристиан Бейл',
+            EngName: 'Christian Bale',
+            Role: 'Кен Майлз'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/matt-damon.png',
+            RusName: 'Мэтт Дэймон',
+            EngName: 'Matt Damon',
+            Role: 'Кэрролл Шелби'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/tracy-letts.png',
+            RusName: 'Трэйси Леттс',
+            EngName: 'Tracy Letts',
+            Role: 'Генри Форд II'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/jon-bernthal.png',
+            RusName: 'Джон Бернтал',
+            EngName: 'Jon Bernthal',
+            Role: 'Ли Якокка'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/noah-jupe.png',
+            RusName: 'Ноа Джуп',
+            EngName: 'Noah Jupe',
+            Role: 'Питер Майлз'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/josh-lucas.png',
+            RusName: 'Джош Лукас',
+            EngName: 'Josh Lucas',
+            Role: 'Лео Биби'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/remo-girone.png',
+            RusName: 'Ремо Джироне',
+            EngName: 'Remo Girone',
+            Role: 'Энцо Феррари'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/ray-mckinnon.png',
+            RusName: 'Рэй Маккиннон',
+            EngName: 'Ray McKinnon',
+            Role: 'Фил Ремингтон'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ford-vs-ferrari/jj-fild.png',
+            RusName: 'Джей Джей Филд',
+            EngName: 'JJ Feild',
+            Role: 'Рой Ланн'
+        }).ActorsSpumerMechanism();
     }
 });

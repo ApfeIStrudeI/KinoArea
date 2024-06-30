@@ -1046,5 +1046,49 @@ window.addEventListener('DOMContentLoaded', () => {
             secondMovieQuoteAuthor: 'Джон Лейн'
         }).PageSpumerMechanism();
 
+    } else if(document.querySelector('.body').classList.contains('inglouriousbasterds')) {
+
+        // inglouriousbasterds page
+
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/bastards.png',
+            movieCardItem: 'images/filmPosters/inglouriousbasterds.png',
+            movieTitleRus: 'Бесславные ублюдки',
+            movieTitleEng: 'Inglourious basterds',
+            KinoareaMark: '8',
+            IMDbMark: '8.71',
+            shortMovieDescr: 'Вторая мировая война. В оккупированной немцами Франции группа американских солдат-евреев наводит страх на нацистов, жестоко убивая и скальпируя солдат.',
+            expectationsRating: '98',
+            peopNum: '75013',
+            yearOfRelease: '2009',
+            countryOfRelease: 'Германия, США',
+            slogan: '«Они мстят бодро, весело, со вкусом»',
+            director: 'Квентин Тарантино',
+            Screenwriter: 'Квентин Тарантино',
+            Producer: 'Лоуренс Бендер, Уильям Пол Кларк, Кристоф Фиссер, ...',
+            Operator: 'Роберт Ричардсон',
+            Composer: 'Эннио Морриконе',
+            Artist: 'Дэвид Уоско, Марко Биттнер Россер, Штефан О. Гесслер, ...',
+            Editor: 'Салли Менке',
+            Genre: 'Боевик, драма, комедия, военный',
+            boxOffice: '321 455 689',
+            PremiereWrld: '20 мая 2009',
+            PremiereRF: '20 августа 2009',
+            AgeLimit: '18+',
+            TimeLimit: '153 мин. / 02:33',
+            directorIMG: 'images/directors/kventin-tarantino.png',
+            directorNameRus: 'Квентин Тарантино',
+            directorNameEng: 'Quentin Tarantino',
+            ProductionSpanList: '<span>1.ㅤA Band Apart</span><span>2.ㅤLawrence Bender Productions</span><span>3.ㅤStudio Babelsberg</span><span>4.ㅤThe Weinstein Company LLC</span><span>5.ㅤ	Universal Pictures</span><span>6.ㅤZehnte Babelsberg</span>',
+            SpecialEffectsSpanList: '<span>нет информации</span>',
+            DubbingStudioSpanList: '<span>1.ㅤПифагор</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/inglouriousbasterds1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/inglouriousbasterds2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/inglouriousbasterds3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/inglouriousbasterds/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/inglouriousbasterds/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/inglouriousbasterds/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/inglouriousbasterds/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/inglouriousbasterds/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/inglouriousbasterds/6.png"></div>',
+            firstMovieQuote: 'Обожаю слухи! В фактах легко запутаться, а слух — будь то правда или ложь — выдает с головой.',
+            firstMovieQuoteAuthor: 'Ганс Ланда',
+            secondMovieQuote: 'А знаешь что, Ютивич, это вполне тянет на шедевр.',
+            secondMovieQuoteAuthor: 'Альдо Рейн'
+        }).PageSpumerMechanism();
+
     }
 });

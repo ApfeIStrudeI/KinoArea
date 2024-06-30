@@ -210,5 +210,36 @@ window.addEventListener('DOMContentLoaded', () => {
             year: '--'
         }).AchievementSpumerMechanism();
         
-    } 
+    } if(document.querySelector('.body').classList.contains('inglouriousbasterds')) {
+
+        // inglouriousbasterds page
+        new AchievementSpumer({
+            src: 'icons/avards/awardOscar.png',
+            achievement: 'Оскар',
+            nomination: 'Лучшая мужская роль второго плана',
+            year: '2010'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/saturn.png',
+            achievement: 'Сатурн',
+            nomination: 'Лучший боевик или триллер',
+            year: '2010'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/awardGoldenGlobe.png',
+            achievement: 'Золотой глобус',
+            nomination: 'Лучшая мужская роль второго плана',
+            year: '2010'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/brit-academ.png',
+            achievement: 'Британская академия',
+            nomination: 'Лучшая мужская роль второго плана',
+            year: '2010'
+        }).AchievementSpumerMechanism();
+        
+    }
 });

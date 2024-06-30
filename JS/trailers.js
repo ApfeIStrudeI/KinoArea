@@ -425,5 +425,18 @@ window.addEventListener('DOMContentLoaded', () => {
             '10253',
             '.movieTrailer .openTrailerBase'
         ).render();
+    } else if (body.classList.contains('inglouriousbasterds')) {
+       
+        // типа данные с сервера (для бесславных ублюдков)
+
+        new TrailerActiveTab(
+            'videoDB/inglouriousbasterds.mp4',
+            'images/trailers/inglouriousbasterds-tr.png',
+            'Бесславные ублюдки',
+            'inglouriousbasterds',
+            '92380',
+            '28451',
+            '.movieTrailer .openTrailerBase'
+        ).render();
     }
 });

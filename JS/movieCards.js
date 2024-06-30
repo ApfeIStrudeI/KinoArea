@@ -197,7 +197,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/inglouriousbasterds.png',
-        '#',
+        'inglouriousbasterds.html',
         '8',
         'Бесславные ублюдки',
         'Драма, военный, комедия, боевик',

@@ -404,5 +404,69 @@ window.addEventListener('DOMContentLoaded', () => {
             EngName: 'Sara Tomko',
             Role: 'Pangea'
         }).ActorsSpumerMechanism();
+    } else if(document.querySelector('.body').classList.contains('inglouriousbasterds')) {
+
+        // inglouriousbasterds page
+        
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/bred-pitt.png',
+            RusName: 'Брэд Питт',
+            EngName: 'Brad Pitt',
+            Role: 'Альдо Рейн'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/christoph-waltz.png',
+            RusName: 'Кристоф Вальц',
+            EngName: 'Christoph Waltz',
+            Role: 'Ганс Ланда'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/mellany-loran.png',
+            RusName: 'Мелани Лоран',
+            EngName: 'Mélanie Laurent',
+            Role: 'Шошанна Дрейфюс'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/daniel-brule.png',
+            RusName: 'Даниэль Брюль',
+            EngName: 'Daniel Brühl',
+            Role: 'Фредерик Цоллер'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/diana-kruger.png',
+            RusName: 'Диайан Крюгер',
+            EngName: 'Diane Kruger',
+            Role: 'Бриджит фон Хаммерсмарк'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/maikl-fassbender.png',
+            RusName: 'Майкл Фассбендер',
+            EngName: 'Michael Fassbender',
+            Role: 'Арчи Хикокс'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/august-diehl.png',
+            RusName: 'Август Диль',
+            EngName: 'August Diehl',
+            Role: 'Дитер Хельстром'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/eli-roth.png',
+            RusName: 'Элай Рот',
+            EngName: 'Eli Roth',
+            Role: 'Донни Доновиц'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/till-shwaiger.png',
+            RusName: 'Тиль Швайгер',
+            EngName: 'Til Schweiger',
+            Role: 'Хуго Штиглиц'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/omar-doom.png',
+            RusName: 'Омар Дум',
+            EngName: 'Omar Doom',
+            Role: 'Омар Ульмар'
+        }).ActorsSpumerMechanism();
     }
 });

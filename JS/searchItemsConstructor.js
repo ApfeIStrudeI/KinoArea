@@ -164,7 +164,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/filmPosters/inglouriousbasterds.png', 
-        url: '#', 
+        url: 'inglouriousbasterds.html', 
         titlerus: 'Бесславные ублюдки', 
         titleeng: 'Inglourious Basterds', 
         genres: 'Драма, военный, комедия, боевик', 

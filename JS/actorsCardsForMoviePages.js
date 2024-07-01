@@ -468,5 +468,133 @@ window.addEventListener('DOMContentLoaded', () => {
             EngName: 'Omar Doom',
             Role: 'Омар Ульмар'
         }).ActorsSpumerMechanism();
+    } else if(document.querySelector('.body').classList.contains('django-unchained')) {
+
+        // inglouriousbasterds page
+        
+        new ActorsSpumer({
+            src: 'images/actors/django/jamie-foxx.png',
+            RusName: 'Джейми Фокс',
+            EngName: 'Jamie Foxx',
+            Role: 'Джанго Фримен'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/ing-bast/christoph-waltz.png',
+            RusName: 'Кристоф Вальц',
+            EngName: 'Christoph Waltz',
+            Role: 'Ганс Ланда'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/leonardo-di-caprio.png',
+            RusName: 'Леонардо Ди Каприо',
+            EngName: 'Leonardo DiCaprio',
+            Role: 'Кэлвин Кэнди'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/carry-washington.png',
+            RusName: 'Керри Вашингтон',
+            EngName: 'Kerry Washington',
+            Role: 'Broomhilda von Shaft'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/samuel-l-jackson.png',
+            RusName: 'Сэмюэл Л. Джексон',
+            EngName: 'Samuel L. Jackson',
+            Role: 'Стивен'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/walton-goggins.png',
+            RusName: 'Уолтон Гоггинс',
+            EngName: 'Walton Goggins',
+            Role: 'Билли Крэш'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/dennis-kristopher.png',
+            RusName: 'Деннис Кристофер',
+            EngName: 'Dennis Christopher',
+            Role: 'Леонид Моги'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/james-remar.png',
+            RusName: 'Джеймс Ремар',
+            EngName: 'James Remar',
+            Role: 'Эйс Спек/Бутч Пух'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/don-djonson.png',
+            RusName: 'Дон Джонсон',
+            EngName: 'Don Johnson',
+            Role: 'Спенсер «Большой папа» Беннет'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/django/laura-cayouette.png',
+            RusName: 'Лора Кайюэтт',
+            EngName: 'Laura Cayouette',
+            Role: 'Lara-Lee Candie-Fitzwilly'
+        }).ActorsSpumerMechanism();
+    } else if(document.querySelector('.body').classList.contains('druk')) {
+
+        // druk page
+        
+        new ActorsSpumer({
+            src: 'images/actors/druk/mads-mikkelsen.png',
+            RusName: 'Мадс Миккельсен',
+            EngName: 'Mads Mikkelsen',
+            Role: 'Мартин'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/thomas-bo-larsen.png',
+            RusName: 'Томас Бо Ларсен',
+            EngName: 'Thomas Bo Larsen',
+            Role: 'Томми'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/magnus-millang.png',
+            RusName: 'Магнус Милланг',
+            EngName: 'Magnus Millang',
+            Role: 'Николай'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/lars-ranthe.png',
+            RusName: 'Ларс Ранте',
+            EngName: 'Lars Ranthe',
+            Role: 'Петер'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/maria-bonnevie.png',
+            RusName: 'Мария Бонневи',
+            EngName: 'Maria Bonnevie',
+            Role: 'Аника'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/helene-reingaard-neumann.png',
+            RusName: 'Хелене Рейнгор Неуман',
+            EngName: 'Helene Reingaard Neumann',
+            Role: 'Amalie'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/susse-wold.png',
+            RusName: 'Суссе Вольд',
+            EngName: 'Susse Wold',
+            Role: 'The Principal'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/albert-rudbeck-lindhardt.png',
+            RusName: 'Альберт Рудбек Линдхардт',
+            EngName: 'Albert Rudbeck Lindhardt',
+            Role: 'Себастьян'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/martin-greis.png',
+            RusName: 'Мартин Грайс',
+            EngName: 'Martin Greis',
+            Role: 'Overtjener'
+        }).ActorsSpumerMechanism();
+        new ActorsSpumer({
+            src: 'images/actors/druk/frederik-winther.png',
+            RusName: 'Фредерик Винтер',
+            EngName: 'Frederik Winther',
+            Role: 'Мальте'
+        }).ActorsSpumerMechanism();
     }
 });

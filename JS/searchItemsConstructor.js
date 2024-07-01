@@ -224,7 +224,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/filmPosters/django.png', 
-        url: '#', 
+        url: 'django.html', 
         titlerus: 'Джанго освобождённый', 
         titleeng: 'Django Unchained', 
         genres: 'Вестерн, комедия, драма, боевик', 
@@ -434,7 +434,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new searchItems({
         img: 'images/popular/druk.png', 
-        url: '#', 
+        url: 'druk.html', 
         titlerus: 'Ещё по одной', 
         titleeng: 'Druk', 
         genres: 'Драма, комедия', 

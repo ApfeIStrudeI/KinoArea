@@ -267,7 +267,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/filmPosters/django.png',
-        '#',
+        'django.html',
         '8.2',
         'Джанго освобождённый',
         'Вестерн, комедия, драма, боевик',
@@ -477,7 +477,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     new MovieCard(
         'images/popular/druk.png',
-        '#',
+        'druk.html',
         '7.6',
         'Ещё по одной',
         'Драма, комедия',

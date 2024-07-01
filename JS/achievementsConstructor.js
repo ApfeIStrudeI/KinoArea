@@ -241,5 +241,67 @@ window.addEventListener('DOMContentLoaded', () => {
             year: '2010'
         }).AchievementSpumerMechanism();
         
+    } if(document.querySelector('.body').classList.contains('django-unchained')) {
+
+        // django-unchained page
+        new AchievementSpumer({
+            src: 'icons/avards/awardOscar.png',
+            achievement: 'Оскар',
+            nomination: 'Лучшая мужская роль второго плана',
+            year: '2013'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/saturn.png',
+            achievement: 'Сатурн',
+            nomination: 'Лучший сценарий',
+            year: '2013'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/awardGoldenGlobe.png',
+            achievement: 'Золотой глобус',
+            nomination: 'Лучшая мужская роль второго плана',
+            year: '2013'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/awardOscar.png',
+            achievement: 'Оскар',
+            nomination: 'Лучший сценарий',
+            year: '2013'
+        }).AchievementSpumerMechanism();
+        
+    } if(document.querySelector('.body').classList.contains('druk')) {
+
+        // druk page
+        new AchievementSpumer({
+            src: 'icons/avards/awardOscar.png',
+            achievement: 'Оскар',
+            nomination: 'Лучший фильм на иностранном языке',
+            year: '2021'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/brit-academ.png',
+            achievement: 'Британская академия',
+            nomination: 'Лучший фильм на иностранном языке',
+            year: '2021'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/awardGoldenGlobe-nomination.png',
+            achievement: 'номинация на премию Золотой глобус',
+            nomination: 'Лучший фильм на иностранном языке',
+            year: '2021'
+        }).AchievementSpumerMechanism();
+
+        new AchievementSpumer({
+            src: 'icons/avards/awardOscar-nomination.png',
+            achievement: 'номинация на премию Оскар',
+            nomination: 'Лучший режиссер',
+            year: '2021'
+        }).AchievementSpumerMechanism();
+        
     }
 });

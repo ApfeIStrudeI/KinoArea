@@ -1090,5 +1090,93 @@ window.addEventListener('DOMContentLoaded', () => {
             secondMovieQuoteAuthor: 'Альдо Рейн'
         }).PageSpumerMechanism();
 
+    } else if(document.querySelector('.body').classList.contains('django-unchained')) {
+
+        // django-unchained page
+
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/django.png',
+            movieCardItem: 'images/filmPosters/django.png',
+            movieTitleRus: 'Джанго освобождённый',
+            movieTitleEng: 'Django unchained',
+            KinoareaMark: '8.2',
+            IMDbMark: '8.5',
+            shortMovieDescr: 'Шульц — эксцентричный охотник за головами, который выслеживает и отстреливает самых опасных преступников. Он освобождает раба по имени Джанго, поскольку тот может помочь ему в поисках трёх бандитов. Джанго знает этих парней в лицо, ведь у него с ними свои счёты.',
+            expectationsRating: '88',
+            peopNum: '95013',
+            yearOfRelease: '2012',
+            countryOfRelease: 'США',
+            slogan: '«Они забрали его свободу. Он заберёт у них всё»',
+            director: 'Квентин Тарантино',
+            Screenwriter: 'Квентин Тарантино',
+            Producer: 'Реджинальд Хадлин, Пилар Савон, Стейси Шер, ...',
+            Operator: 'Роберт Ричардсон',
+            Composer: 'Эннио Морриконе',
+            Artist: 'Дж. Майкл Рива, Пейдж Бакнер, Дэвид Ф. Классен, ...',
+            Editor: 'Фред Раскин',
+            Genre: 'Боевик, вестерн, драма, комедия',
+            boxOffice: '425 368 238',
+            PremiereWrld: '17 января 2013',
+            PremiereRF: '20 августа 2009',
+            AgeLimit: '18+',
+            TimeLimit: '165 мин. / 02:45',
+            directorIMG: 'images/directors/kventin-tarantino.png',
+            directorNameRus: 'Квентин Тарантино',
+            directorNameEng: 'Quentin Tarantino',
+            ProductionSpanList: '<span>1.ㅤBrown 26 Productions</span><span>2.ㅤColumbia Pictures</span><span>3.ㅤDouble Feature Films</span><span>4.ㅤSuper Cool Man Shoe Too</span><span>5.ㅤSuper Cool ManChu, Too</span><span>6.ㅤThe Weinstein Company LLC</span><span>7.ㅤ	Visiona Romantica</span>',
+            SpecialEffectsSpanList: '<span>1.ㅤK.N.B. EFX Group Inc.</span><span>2.ㅤRhythm & Hues</span>',
+            DubbingStudioSpanList: '<span>1.ㅤПифагор</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/django1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/django2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/django3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/django/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/django/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/django/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/django/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/django/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/django/6.png"></div>',
+            firstMovieQuote: 'Зигфрид взобрался на гору, ведь он не боялся высоты, и убил дракона, потому что не боялся его. И прошел сквозь адское пламя. Потому что Брумхильда того стоила',
+            firstMovieQuoteAuthor: 'Кинг Шульц',
+            secondMovieQuote: 'В обычной ситуации я бы сказал "Auf Wiedersehen", но так как "Auf Wiedersehen" по-немецки значит "До новой встречи", а я больше никогда не желаю вас видеть, сэр, я скажу прощайте навсегда!',
+            secondMovieQuoteAuthor: 'Кинг Шульц'
+        }).PageSpumerMechanism();
+
+    } else if(document.querySelector('.body').classList.contains('druk')) {
+
+        // druk page
+
+        new PageSpumer({
+            mainBackgroundImageSRC: 'images/page-bg/druk.png',
+            movieCardItem: 'images/popular/druk.png',
+            movieTitleRus: 'Еще по одной',
+            movieTitleEng: 'Druk',
+            KinoareaMark: '7.6',
+            IMDbMark: '7.7',
+            shortMovieDescr: 'В ресторане собираются учитель истории, психологии, музыки и физрук, чтобы отметить 40-летие одного из них. И решают проверить научную теорию о том, что c самого рождения человек страдает от нехватки алкоголя в крови, а чтобы стать по-настоящему счастливым, нужно быть немного нетрезвым. Друзья договариваются наблюдать, как возлияния скажутся на их работе и личной жизни, и устанавливают правила: не пить вечером и по выходным. Казалось бы, что может пойти не так?',
+            expectationsRating: '93',
+            peopNum: '46013',
+            yearOfRelease: '2020',
+            countryOfRelease: 'Дания, Швеция, Нидерланды',
+            slogan: '«Еще по одной»',
+            director: 'Томас Винтерберг',
+            Screenwriter: 'Томас Винтерберг, Тобиас Линдхольм',
+            Producer: 'Каспер Диссинг Нильсен, Сиссе Граум Йоргенсен, Джессика Балак, ...',
+            Operator: 'Стурла Брандт Грёвлен',
+            Composer: 'Emil Goll Alexander Malone Joachim Dencker',
+            Artist: 'Сабина Хвиид, Эллен Ленс, Манон Расмуссен',
+            Editor: 'Янус Биллесков Янсен, Анне Эстеруд',
+            Genre: 'Драма, комедия',
+            boxOffice: '12 742 455',
+            PremiereWrld: '12 сентября 2020',
+            PremiereRF: '12 ноября 2020',
+            AgeLimit: '18+',
+            TimeLimit: '110 мин. / 01:50',
+            directorIMG: 'images/directors/thomas-vinterberg.png',
+            directorNameRus: 'Томас Винтерберг',
+            directorNameEng: 'Thomas Vinterberg',
+            ProductionSpanList: '<span>1.ㅤDet Danske Filminstitut</span><span>2.ㅤEurimages</span><span>3.ㅤFilm i Väst</span><span>4.ㅤNederlands Filmfonds</span><span>5.ㅤTopkapi Films</span><span>6.ㅤ	TV2 Danmark</span><span>7.ㅤZentropa Productions 2</span>',
+            SpecialEffectsSpanList: '<span>1.ㅤKamerauthyrningen</span><span>2.ㅤStorm Post Production</span>',
+            DubbingStudioSpanList: '<span>1.ㅤPride Production</span>',
+            PostersForMoviePostersSection: '<div class="moviePosters__item"><img src="images/moviePagesPosters/posters/druk1.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/druk2.png"></div><div class="moviePosters__item"><img src="images/moviePagesPosters/posters/druk3.png"></div>',
+            FramesForMovieFramesSection: '<div class="movieFrames__item_bigImg"><img src="images/movieFrames/druk/1.png"></div><div class="movieFrames__item"><img src="images/movieFrames/druk/2.png"></div><div class="movieFrames__item"><img src="images/movieFrames/druk/3.png"></div><div class="movieFrames__item"><img src="images/movieFrames/druk/4.png"></div><div class="movieFrames__item"><img src="images/movieFrames/druk/5.png"></div><div class="movieFrames__item_bigImg"><img src="images/movieFrames/druk/6.png"></div>',
+            firstMovieQuote: 'Вы должны признать себя подверженным ошибкам, чтобы любить других и жизнь.',
+            firstMovieQuoteAuthor: 'Себастьян [цитируя "Концепцию тревоги" Серена Кьеркегора]',
+            secondMovieQuote: 'Осмелиться - значит на мгновение потерять равновесие. Не осмеливаться - значит потерять себя.',
+            secondMovieQuoteAuthor: 'Сигрид'
+        }).PageSpumerMechanism();
+
     }
 });

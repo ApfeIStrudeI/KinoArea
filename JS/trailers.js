@@ -438,5 +438,31 @@ window.addEventListener('DOMContentLoaded', () => {
             '28451',
             '.movieTrailer .openTrailerBase'
         ).render();
+    } else if (body.classList.contains('django-unchained')) {
+       
+        // типа данные с сервера (для Джанго)
+
+        new TrailerActiveTab(
+            'videoDB/django.mp4',
+            'images/trailers/django-tr.png',
+            'Джанго освобождённый',
+            'djangounchained',
+            '62400',
+            '10521',
+            '.movieTrailer .openTrailerBase'
+        ).render();
+    } else if (body.classList.contains('druk')) {
+       
+        // типа данные с сервера (для Ещё по одной)
+
+        new TrailerActiveTab(
+            'videoDB/druk.mp4',
+            'images/trailers/druk.png',
+            'Ещё по одной',
+            'druk',
+            '23121',
+            '3240',
+            '.movieTrailer .openTrailerBase'
+        ).render();
     }
 });
